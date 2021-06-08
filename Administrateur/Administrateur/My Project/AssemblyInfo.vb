@@ -8,17 +8,17 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("MiageManagement")> 
+<Assembly: AssemblyTitle("Administrateur")> 
 <Assembly: AssemblyDescription("")> 
 <Assembly: AssemblyCompany("")> 
-<Assembly: AssemblyProduct("MiageManagement")> 
+<Assembly: AssemblyProduct("Administrateur")> 
 <Assembly: AssemblyCopyright("Copyright ©  2021")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("53afcdf0-533d-43c7-b7f5-49cba67f97ff")> 
+<Assembly: Guid("2076c538-0a45-4b63-9979-23361a0ba7f3")> 
 
 ' Version information for an assembly consists of the following four values:
 '
