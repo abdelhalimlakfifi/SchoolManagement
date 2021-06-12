@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{B7B14956-3211-4DC3-A043-0E4F8930C43B}" Label="" LastModificationDate="1623231409" Name="MiageProject" Objects="135" Symbols="45" Type="{1E597170-9350-11D1-AB3C-0020AF71E433}" signature="CDM_DATA_MODEL_XML" version="15.1.0.2850"?>
+<?PowerDesigner AppLocale="UTF16" ID="{B7B14956-3211-4DC3-A043-0E4F8930C43B}" Label="" LastModificationDate="1623276512" Name="MiageProject" Objects="135" Symbols="45" Type="{1E597170-9350-11D1-AB3C-0020AF71E433}" signature="CDM_DATA_MODEL_XML" version="15.1.0.2850"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -12,7 +12,7 @@
 <a:Code>MIAGEPROJECT</a:Code>
 <a:CreationDate>1623139977</a:CreationDate>
 <a:Creator>Pitcho</a:Creator>
-<a:ModificationDate>1623231203</a:ModificationDate>
+<a:ModificationDate>1623276275</a:ModificationDate>
 <a:Modifier>Pitcho</a:Modifier>
 <a:PackageOptionsText>[FolderOptions]
 
@@ -1268,8 +1268,8 @@ CARD 0 Arial,8,N</a:FontList>
 <o:AssociationLinkSymbol Id="o19">
 <a:CreationDate>1623141592</a:CreationDate>
 <a:ModificationDate>1623143385</a:ModificationDate>
-<a:Rect>((-211350,886904), (-185850,891225))</a:Rect>
-<a:ListOfPoints>((-211312,891225),(-211312,887437),(-185850,887437))</a:ListOfPoints>
+<a:Rect>((-211383,886904), (-185850,891225))</a:Rect>
+<a:ListOfPoints>((-211383,891225),(-211312,887437),(-185850,887437))</a:ListOfPoints>
 <a:CornerStyle>2</a:CornerStyle>
 <a:ArrowStyle>0</a:ArrowStyle>
 <a:LineColor>16744576</a:LineColor>
@@ -1310,8 +1310,8 @@ CARD 0 Arial,8,N</a:FontList>
 <o:AssociationLinkSymbol Id="o25">
 <a:CreationDate>1623141593</a:CreationDate>
 <a:ModificationDate>1623143385</a:ModificationDate>
-<a:Rect>((-232210,888187), (-213120,894525))</a:Rect>
-<a:ListOfPoints>((-213120,894525),(-232210,894525),(-232210,888187))</a:ListOfPoints>
+<a:Rect>((-232210,888187), (-213247,894525))</a:Rect>
+<a:ListOfPoints>((-213247,894525),(-232210,894525),(-232210,888187))</a:ListOfPoints>
 <a:CornerStyle>2</a:CornerStyle>
 <a:ArrowStyle>0</a:ArrowStyle>
 <a:LineColor>16744576</a:LineColor>
@@ -1415,8 +1415,8 @@ CARD 0 Arial,8,N</a:FontList>
 <o:AssociationLinkSymbol Id="o39">
 <a:CreationDate>1623142759</a:CreationDate>
 <a:ModificationDate>1623187901</a:ModificationDate>
-<a:Rect>((-226595,843784), (-200887,846281))</a:Rect>
-<a:ListOfPoints>((-226595,845107),(-214538,845107),(-214538,843784),(-200887,843784))</a:ListOfPoints>
+<a:Rect>((-226133,843784), (-200887,846281))</a:Rect>
+<a:ListOfPoints>((-226133,845107),(-214538,845107),(-214538,843784),(-200887,843784))</a:ListOfPoints>
 <a:CornerStyle>2</a:CornerStyle>
 <a:ArrowStyle>0</a:ArrowStyle>
 <a:LineColor>16744576</a:LineColor>
@@ -1457,8 +1457,8 @@ CARD 0 Arial,8,N</a:FontList>
 <o:AssociationLinkSymbol Id="o45">
 <a:CreationDate>1623142810</a:CreationDate>
 <a:ModificationDate>1623187901</a:ModificationDate>
-<a:Rect>((-247784,844134), (-231716,855591))</a:Rect>
-<a:ListOfPoints>((-231754,844134),(-231754,855591),(-247784,855591))</a:ListOfPoints>
+<a:Rect>((-247784,844134), (-231754,855591))</a:Rect>
+<a:ListOfPoints>((-231947,844134),(-231754,855591),(-247784,855591))</a:ListOfPoints>
 <a:CornerStyle>2</a:CornerStyle>
 <a:ArrowStyle>0</a:ArrowStyle>
 <a:LineColor>16744576</a:LineColor>
@@ -1478,8 +1478,8 @@ CARD 0 Arial,8,N</a:FontList>
 <o:AssociationLinkSymbol Id="o47">
 <a:CreationDate>1623183177</a:CreationDate>
 <a:ModificationDate>1623187901</a:ModificationDate>
-<a:Rect>((-230139,846442), (-219170,851181))</a:Rect>
-<a:ListOfPoints>((-228377,846442),(-228377,851181),(-219170,851181))</a:ListOfPoints>
+<a:Rect>((-230077,846442), (-219170,851181))</a:Rect>
+<a:ListOfPoints>((-228141,846442),(-228377,851181),(-219170,851181))</a:ListOfPoints>
 <a:CornerStyle>2</a:CornerStyle>
 <a:ArrowStyle>0</a:ArrowStyle>
 <a:LineColor>16744576</a:LineColor>
@@ -1498,9 +1498,9 @@ CARD 0 Arial,8,N</a:FontList>
 </o:AssociationLinkSymbol>
 <o:AssociationLinkSymbol Id="o50">
 <a:CreationDate>1623183177</a:CreationDate>
-<a:ModificationDate>1623187928</a:ModificationDate>
-<a:Rect>((-219170,850186), (-205454,854184))</a:Rect>
-<a:ListOfPoints>((-207216,854184),(-207216,851181),(-219170,851181))</a:ListOfPoints>
+<a:ModificationDate>1623276496</a:ModificationDate>
+<a:Rect>((-219170,850186), (-204189,854184))</a:Rect>
+<a:ListOfPoints>((-205989,854184),(-205989,851181),(-219170,851181))</a:ListOfPoints>
 <a:CornerStyle>2</a:CornerStyle>
 <a:ArrowStyle>0</a:ArrowStyle>
 <a:LineColor>16744576</a:LineColor>
@@ -1541,8 +1541,8 @@ CARD 0 Arial,8,N</a:FontList>
 <o:AssociationLinkSymbol Id="o56">
 <a:CreationDate>1623183179</a:CreationDate>
 <a:ModificationDate>1623187928</a:ModificationDate>
-<a:Rect>((-231004,853829), (-209797,859137))</a:Rect>
-<a:ListOfPoints>((-209797,855003),(-221111,855003),(-221111,859137),(-231004,859137))</a:ListOfPoints>
+<a:Rect>((-231004,853829), (-209218,859137))</a:Rect>
+<a:ListOfPoints>((-209218,855003),(-221111,855003),(-221111,859137),(-231004,859137))</a:ListOfPoints>
 <a:CornerStyle>2</a:CornerStyle>
 <a:ArrowStyle>0</a:ArrowStyle>
 <a:LineColor>16744576</a:LineColor>
@@ -1561,10 +1561,10 @@ CARD 0 Arial,8,N</a:FontList>
 </o:AssociationLinkSymbol>
 <o:AssociationLinkSymbol Id="o58">
 <a:CreationDate>1623183180</a:CreationDate>
-<a:ModificationDate>1623187928</a:ModificationDate>
+<a:ModificationDate>1623276496</a:ModificationDate>
 <a:SourceTextOffset>(-862, 420)</a:SourceTextOffset>
-<a:Rect>((-207806,855649), (-201702,863779))</a:Rect>
-<a:ListOfPoints>((-206044,855649),(-206044,863779),(-201702,863779))</a:ListOfPoints>
+<a:Rect>((-206285,855649), (-201702,863779))</a:Rect>
+<a:ListOfPoints>((-204523,855649),(-204523,863779),(-201702,863779))</a:ListOfPoints>
 <a:CornerStyle>2</a:CornerStyle>
 <a:ArrowStyle>0</a:ArrowStyle>
 <a:LineColor>16744576</a:LineColor>
@@ -1648,8 +1648,8 @@ CARD 0 Arial,8,N</a:FontList>
 <o:AssociationLinkSymbol Id="o69">
 <a:CreationDate>1623227073</a:CreationDate>
 <a:ModificationDate>1623227166</a:ModificationDate>
-<a:Rect>((-259028,848131), (-246640,849553))</a:Rect>
-<a:ListOfPoints>((-259028,848966),(-253434,848966),(-253434,848131),(-246640,848131))</a:ListOfPoints>
+<a:Rect>((-258902,847179), (-246640,848966))</a:Rect>
+<a:ListOfPoints>((-258902,848966),(-253434,848966),(-253434,848131),(-246640,848131))</a:ListOfPoints>
 <a:CornerStyle>2</a:CornerStyle>
 <a:ArrowStyle>0</a:ArrowStyle>
 <a:LineColor>16744576</a:LineColor>
@@ -1669,8 +1669,8 @@ CARD 0 Arial,8,N</a:FontList>
 <o:AssociationLinkSymbol Id="o73">
 <a:CreationDate>1623227073</a:CreationDate>
 <a:ModificationDate>1623227163</a:ModificationDate>
-<a:Rect>((-246640,842286), (-232673,848215))</a:Rect>
-<a:ListOfPoints>((-232673,843460),(-238853,843460),(-238853,848215),(-246640,848215))</a:ListOfPoints>
+<a:Rect>((-246640,842286), (-232983,848215))</a:Rect>
+<a:ListOfPoints>((-232983,843460),(-238853,843460),(-238853,848215),(-246640,848215))</a:ListOfPoints>
 <a:CornerStyle>2</a:CornerStyle>
 <a:ArrowStyle>0</a:ArrowStyle>
 <a:LineColor>16744576</a:LineColor>
@@ -1794,7 +1794,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:CreationDate>1623141349</a:CreationDate>
 <a:ModificationDate>1623146252</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((-215266,889278), (-202728,896020))</a:Rect>
+<a:Rect>((-215459,889278), (-202535,896020))</a:Rect>
 <a:LineColor>4227200</a:LineColor>
 <a:FillColor>8637161</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -1851,7 +1851,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:CreationDate>1623141944</a:CreationDate>
 <a:ModificationDate>1623187901</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((-236000,842224), (-224466,847992))</a:Rect>
+<a:Rect>((-236733,842224), (-223733,847992))</a:Rect>
 <a:LineColor>4227200</a:LineColor>
 <a:FillColor>8637161</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -1949,9 +1949,9 @@ LABL 0 Arial,8,N</a:FontList>
 </o:AssociationSymbol>
 <o:EntitySymbol Id="o51">
 <a:CreationDate>1623182455</a:CreationDate>
-<a:ModificationDate>1623187928</a:ModificationDate>
+<a:ModificationDate>1623276496</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((-212102,852560), (-203460,859128))</a:Rect>
+<a:Rect>((-212102,852560), (-201290,859128))</a:Rect>
 <a:AutoAdjustToText>0</a:AutoAdjustToText>
 <a:LineColor>4227200</a:LineColor>
 <a:FillColor>8637161</a:FillColor>
@@ -2067,7 +2067,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:CreationDate>1623226987</a:CreationDate>
 <a:ModificationDate>1623227166</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((-265874,846355), (-254186,852123))</a:Rect>
+<a:Rect>((-266608,846355), (-253452,852123))</a:Rect>
 <a:LineColor>4227200</a:LineColor>
 <a:FillColor>8637161</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -2115,7 +2115,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Code>ADMINISTRATEUR</a:Code>
 <a:CreationDate>1623140017</a:CreationDate>
 <a:Creator>Pitcho</a:Creator>
-<a:ModificationDate>1623231203</a:ModificationDate>
+<a:ModificationDate>1623276275</a:ModificationDate>
 <a:Modifier>Pitcho</a:Modifier>
 <c:Identifiers>
 <o:Identifier Id="o96">
@@ -2926,10 +2926,10 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Code>CIN</a:Code>
 <a:CreationDate>1623140617</a:CreationDate>
 <a:Creator>Pitcho</a:Creator>
-<a:ModificationDate>1623140744</a:ModificationDate>
+<a:ModificationDate>1623276313</a:ModificationDate>
 <a:Modifier>Pitcho</a:Modifier>
-<a:DataType>TXT15</a:DataType>
-<a:Length>15</a:Length>
+<a:DataType>TXT25</a:DataType>
+<a:Length>25</a:Length>
 </o:DataItem>
 <o:DataItem Id="o141">
 <a:ObjectID>A8B23B65-0CDB-44DF-B00B-8ADB69D6EB3C</a:ObjectID>
@@ -2957,9 +2957,10 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Code>MOISPAYE</a:Code>
 <a:CreationDate>1623141353</a:CreationDate>
 <a:Creator>Pitcho</a:Creator>
-<a:ModificationDate>1623231029</a:ModificationDate>
+<a:ModificationDate>1623276227</a:ModificationDate>
 <a:Modifier>Pitcho</a:Modifier>
-<a:DataType>TXT</a:DataType>
+<a:DataType>TXT50</a:DataType>
+<a:Length>50</a:Length>
 </o:DataItem>
 <o:DataItem Id="o147">
 <a:ObjectID>CE7695B3-0BB7-40A3-BA01-8F692DEA8D74</a:ObjectID>
@@ -2987,9 +2988,10 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Code>MODULE</a:Code>
 <a:CreationDate>1623141947</a:CreationDate>
 <a:Creator>Pitcho</a:Creator>
-<a:ModificationDate>1623230914</a:ModificationDate>
+<a:ModificationDate>1623276446</a:ModificationDate>
 <a:Modifier>Pitcho</a:Modifier>
-<a:DataType>TXT</a:DataType>
+<a:DataType>TXT70</a:DataType>
+<a:Length>70</a:Length>
 </o:DataItem>
 <o:DataItem Id="o154">
 <a:ObjectID>7EFA4A57-9CC0-44AB-9C45-330F224B3898</a:ObjectID>
@@ -3046,9 +3048,10 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Code>REMARQUE</a:Code>
 <a:CreationDate>1623182787</a:CreationDate>
 <a:Creator>Pitcho</a:Creator>
-<a:ModificationDate>1623183162</a:ModificationDate>
+<a:ModificationDate>1623276492</a:ModificationDate>
 <a:Modifier>Pitcho</a:Modifier>
-<a:DataType>TXT</a:DataType>
+<a:DataType>TXT255</a:DataType>
+<a:Length>255</a:Length>
 </o:DataItem>
 <o:DataItem Id="o170">
 <a:ObjectID>C55FBB08-C5C8-4B1A-A680-82122BE48753</a:ObjectID>
@@ -3066,9 +3069,10 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Code>PRENOM</a:Code>
 <a:CreationDate>1623184491</a:CreationDate>
 <a:Creator>Pitcho</a:Creator>
-<a:ModificationDate>1623228839</a:ModificationDate>
+<a:ModificationDate>1623276275</a:ModificationDate>
 <a:Modifier>Pitcho</a:Modifier>
-<a:DataType>TXT</a:DataType>
+<a:DataType>TXT50</a:DataType>
+<a:Length>50</a:Length>
 </o:DataItem>
 <o:DataItem Id="o108">
 <a:ObjectID>5C81C8A4-8317-4FDC-8B37-A0FC23581744</a:ObjectID>
@@ -3076,9 +3080,10 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Code>SURNOM</a:Code>
 <a:CreationDate>1623184491</a:CreationDate>
 <a:Creator>Pitcho</a:Creator>
-<a:ModificationDate>1623231203</a:ModificationDate>
+<a:ModificationDate>1623276275</a:ModificationDate>
 <a:Modifier>Pitcho</a:Modifier>
-<a:DataType>TXT</a:DataType>
+<a:DataType>TXT50</a:DataType>
+<a:Length>50</a:Length>
 </o:DataItem>
 <o:DataItem Id="o126">
 <a:ObjectID>706E987A-2350-4FC4-872E-D7E4DD7111B7</a:ObjectID>
@@ -3086,9 +3091,10 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Code>MOTS_DE_PASSE</a:Code>
 <a:CreationDate>1623184491</a:CreationDate>
 <a:Creator>Pitcho</a:Creator>
-<a:ModificationDate>1623231067</a:ModificationDate>
+<a:ModificationDate>1623276512</a:ModificationDate>
 <a:Modifier>Pitcho</a:Modifier>
-<a:DataType>TXT</a:DataType>
+<a:DataType>TXT50</a:DataType>
+<a:Length>50</a:Length>
 </o:DataItem>
 <o:DataItem Id="o174">
 <a:ObjectID>81DFA0E9-522D-4265-B4A6-EB3B0706B42F</a:ObjectID>
@@ -3106,9 +3112,10 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Code>NOM_SALLE</a:Code>
 <a:CreationDate>1623226994</a:CreationDate>
 <a:Creator>Pitcho</a:Creator>
-<a:ModificationDate>1623227068</a:ModificationDate>
+<a:ModificationDate>1623276338</a:ModificationDate>
 <a:Modifier>Pitcho</a:Modifier>
-<a:DataType>TXT</a:DataType>
+<a:DataType>TXT20</a:DataType>
+<a:Length>20</a:Length>
 </o:DataItem>
 <o:DataItem Id="o178">
 <a:ObjectID>F9AF53A4-FBE6-4183-A5D0-F86E8C5D2F8E</a:ObjectID>
@@ -3116,9 +3123,10 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Code>TYPE</a:Code>
 <a:CreationDate>1623226994</a:CreationDate>
 <a:Creator>Pitcho</a:Creator>
-<a:ModificationDate>1623227068</a:ModificationDate>
+<a:ModificationDate>1623276338</a:ModificationDate>
 <a:Modifier>Pitcho</a:Modifier>
-<a:DataType>TXT</a:DataType>
+<a:DataType>TXT20</a:DataType>
+<a:Length>20</a:Length>
 </o:DataItem>
 <o:DataItem Id="o110">
 <a:ObjectID>06C78CDD-ED0C-4A91-A783-51FAE40F9DD7</a:ObjectID>
@@ -3126,9 +3134,10 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Code>PASSWORD</a:Code>
 <a:CreationDate>1623231069</a:CreationDate>
 <a:Creator>Pitcho</a:Creator>
-<a:ModificationDate>1623231203</a:ModificationDate>
+<a:ModificationDate>1623276275</a:ModificationDate>
 <a:Modifier>Pitcho</a:Modifier>
-<a:DataType>TXT</a:DataType>
+<a:DataType>TXT50</a:DataType>
+<a:Length>50</a:Length>
 </o:DataItem>
 </c:DataItems>
 <c:Associations>
