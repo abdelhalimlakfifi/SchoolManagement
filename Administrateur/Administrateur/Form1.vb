@@ -1,3 +1,16 @@
-﻿Public Class Form1
+﻿Imports System.Data.SqlClient
+Imports System.IO
+Public Class Form1
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Try
+            Using StreamReader As New StreamReader("Cookie.txt")
+                Dim connection As New SqlConnection("Data Source=" & StreamReader.ReadLine() & ";Initial Catalog=miage;User ID=sa; Password=Miage@095006")
+            End Using
 
+        Catch ex As Exception
+            IPServerForm.Show()
+
+        End Try
+
+    End Sub
 End Class

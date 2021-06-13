@@ -1,1 +1,12 @@
 C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\bin\Debug\Administrateur.exe.config
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\bin\Debug\Administrateur.exe
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\bin\Debug\Administrateur.pdb
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\bin\Debug\Administrateur.xml
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\bin\Debug\Guna.UI.dll
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Form1.resources
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.IPServerForm.resources
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Resources.resources
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.vbproj.GenerateResource.Cache
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.exe
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.xml
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.pdb
