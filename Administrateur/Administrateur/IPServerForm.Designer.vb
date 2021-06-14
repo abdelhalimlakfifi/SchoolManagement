@@ -42,7 +42,7 @@ Partial Class IPServerForm
         Me.GunaButton1.ForeColor = System.Drawing.Color.White
         Me.GunaButton1.Image = CType(resources.GetObject("GunaButton1.Image"), System.Drawing.Image)
         Me.GunaButton1.ImageSize = New System.Drawing.Size(20, 20)
-        Me.GunaButton1.Location = New System.Drawing.Point(59, 174)
+        Me.GunaButton1.Location = New System.Drawing.Point(60, 153)
         Me.GunaButton1.Name = "GunaButton1"
         Me.GunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(151, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GunaButton1.OnHoverBorderColor = System.Drawing.Color.Black
@@ -65,7 +65,7 @@ Partial Class IPServerForm
         Me.GunaButton2.ForeColor = System.Drawing.Color.White
         Me.GunaButton2.Image = CType(resources.GetObject("GunaButton2.Image"), System.Drawing.Image)
         Me.GunaButton2.ImageSize = New System.Drawing.Size(20, 20)
-        Me.GunaButton2.Location = New System.Drawing.Point(228, 174)
+        Me.GunaButton2.Location = New System.Drawing.Point(229, 153)
         Me.GunaButton2.Name = "GunaButton2"
         Me.GunaButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(151, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GunaButton2.OnHoverBorderColor = System.Drawing.Color.Black
@@ -83,7 +83,7 @@ Partial Class IPServerForm
         Me.GunaLineTextBox1.FocusedLineColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GunaLineTextBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GunaLineTextBox1.LineColor = System.Drawing.Color.Gainsboro
-        Me.GunaLineTextBox1.Location = New System.Drawing.Point(116, 84)
+        Me.GunaLineTextBox1.Location = New System.Drawing.Point(117, 63)
         Me.GunaLineTextBox1.Name = "GunaLineTextBox1"
         Me.GunaLineTextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.GunaLineTextBox1.SelectedText = ""
@@ -95,7 +95,7 @@ Partial Class IPServerForm
         '
         Me.GunaLabel1.AutoSize = True
         Me.GunaLabel1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.GunaLabel1.Location = New System.Drawing.Point(113, 66)
+        Me.GunaLabel1.Location = New System.Drawing.Point(114, 45)
         Me.GunaLabel1.Name = "GunaLabel1"
         Me.GunaLabel1.Size = New System.Drawing.Size(52, 15)
         Me.GunaLabel1.TabIndex = 5
@@ -105,7 +105,7 @@ Partial Class IPServerForm
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.Red
-        Me.Label1.Location = New System.Drawing.Point(168, 135)
+        Me.Label1.Location = New System.Drawing.Point(172, 107)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(55, 13)
         Me.Label1.TabIndex = 6
@@ -115,7 +115,7 @@ Partial Class IPServerForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(395, 300)
+        Me.ClientSize = New System.Drawing.Size(412, 236)
         Me.ControlBox = False
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.GunaLabel1)

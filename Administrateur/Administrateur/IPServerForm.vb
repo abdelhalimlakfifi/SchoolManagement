@@ -25,7 +25,9 @@ Public Class IPServerForm
 
     Private Sub GunaButton2_Click(sender As Object, e As EventArgs) Handles GunaButton2.Click
         If Label1.Text = "Activated" Then
+            Form1.Enabled = True
             Me.Close()
+
         Else
             Application.Exit()
 
