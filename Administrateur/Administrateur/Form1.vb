@@ -14,4 +14,8 @@ Public Class Form1
         End Try
 
     End Sub
+
+    Private Sub GunaSeparator1_Click(sender As Object, e As EventArgs)
+
+    End Sub
 End Class
