@@ -1,37 +1,29 @@
 ﻿Imports System.Data.SqlClient
 Imports System.IO
+Public Module ipAdress
+    Public ip As String
+End Module
 Public Class Form1
     Dim MoveX, MoveY As Integer
     Dim newpoint As New Point
-    Sub methode()
-        Dim frm As Loading = New Loading
-        Application.Run(frm)
-    End Sub
+    Public ip As String
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim thr As New Threading.Thread(AddressOf methode)
-        thr.IsBackground = True
-        thr.Start()
+        
         Try
             Using StreamReader As New StreamReader("Cookie.txt")
-                Dim connection As New SqlConnection("Data Source=" & StreamReader.ReadLine() & ";Initial Catalog=miage;User ID=sa; Password=Miage@095006")
+                pdo.ConString = "Data Source=" & StreamReader.ReadLine() & ";Initial Catalog=miage;User ID=sa; Password=Miage@095006"
+                Dim connection As New SqlConnection(pdo.ConString)
                 connection.Open()
+                connection.Close()
             End Using
-
         Catch ex As Exception
+            MsgBox(ex.Message)
             IPServerForm.Show()
-            Loading.Hide()
+
         End Try
-
     End Sub
 
-    Private Sub GunaSeparator1_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub GunaVSeparator1_Click(sender As Object, e As EventArgs) Handles GunaVSeparator1.Click
-
-    End Sub
 
     Private Sub Panel1_MouseDown(sender As Object, e As MouseEventArgs) Handles Panel1.MouseDown
         MoveX = Control.MousePosition.X - Me.Location.X
@@ -46,4 +38,35 @@ Public Class Form1
             Application.DoEvents()
         End If
     End Sub
+
+    Private Sub GunaLabel1_Click(sender As Object, e As EventArgs) Handles GunaLabel1.Click
+        If GunaSwitch1.Checked Then
+            GunaSwitch1.Checked = False
+            PasswordTextBox.isPassword = True
+        Else
+            GunaSwitch1.Checked = True
+            PasswordTextBox.isPassword = False
+        End If
+    End Sub
+
+    Private Sub GunaSwitch1_CheckedChanged(sender As Object, e As EventArgs) Handles GunaSwitch1.CheckedChanged
+        If GunaSwitch1.Checked Then
+            PasswordTextBox.isPassword = False
+        Else
+            PasswordTextBox.isPassword = True
+        End If
+    End Sub
+
+    Private Sub GunaButton1_Click(sender As Object, e As EventArgs) Handles GunaButton1.Click
+        Dim connection As New SqlConnection(pdo.ConString)
+        connection.Open()
+        If EmailTextBox.Text <> "" And PasswordTextBox.Text <> "" Then
+            Dim cmd As New SqlCommand("SELECT count(*) FROM ADMINISTRATEUR WHERE SURNOM='" & EmailTextBox.Text & "' AND PASSWORD=HASHBYTES('SHA1','" & PasswordTextBox.Text & "')", connection)
+            Dim count As Integer = Convert.ToInt16(cmd.ExecuteScalar())
+
+        Else
+            MessageBox.Show("Please fill the informrations")
+        End If
+    End Sub
+
 End Class
