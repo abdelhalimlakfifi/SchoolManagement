@@ -138,7 +138,7 @@ Partial Class IPServerForm
         '
         Me.GunaButton2.AnimationHoverSpeed = 0.07!
         Me.GunaButton2.AnimationSpeed = 0.03!
-        Me.GunaButton2.BaseColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.GunaButton2.BaseColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(92, Byte), Integer))
         Me.GunaButton2.BorderColor = System.Drawing.Color.Black
         Me.GunaButton2.DialogResult = System.Windows.Forms.DialogResult.None
         Me.GunaButton2.FocusedColor = System.Drawing.Color.Empty
@@ -161,7 +161,7 @@ Partial Class IPServerForm
         '
         Me.GunaButton1.AnimationHoverSpeed = 0.07!
         Me.GunaButton1.AnimationSpeed = 0.03!
-        Me.GunaButton1.BaseColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.GunaButton1.BaseColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(92, Byte), Integer))
         Me.GunaButton1.BorderColor = System.Drawing.Color.Black
         Me.GunaButton1.DialogResult = System.Windows.Forms.DialogResult.None
         Me.GunaButton1.FocusedColor = System.Drawing.Color.Empty
