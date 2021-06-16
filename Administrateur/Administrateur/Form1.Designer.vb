@@ -25,7 +25,7 @@ Partial Class Form1
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.GunaPanel1 = New Guna.UI.WinForms.GunaPanel()
-        Me.GunaPictureBox1 = New Guna.UI.WinForms.GunaPictureBox()
+        Me.GunaLabel2 = New Guna.UI.WinForms.GunaLabel()
         Me.BunifuElipse1 = New ns1.BunifuElipse(Me.components)
         Me.GunaButton1 = New Guna.UI.WinForms.GunaButton()
         Me.EmailTextBox = New ns1.BunifuMaterialTextbox()
@@ -40,13 +40,13 @@ Partial Class Form1
         Me.GunaControlBox1 = New Guna.UI.WinForms.GunaControlBox()
         Me.GunaControlBox2 = New Guna.UI.WinForms.GunaControlBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.GunaPictureBox2 = New Guna.UI.WinForms.GunaPictureBox()
         Me.BunifuCustomLabel2 = New ns1.BunifuCustomLabel()
         Me.BunifuCustomLabel3 = New ns1.BunifuCustomLabel()
-        Me.GunaLabel2 = New Guna.UI.WinForms.GunaLabel()
+        Me.GunaPictureBox2 = New Guna.UI.WinForms.GunaPictureBox()
+        Me.GunaPictureBox1 = New Guna.UI.WinForms.GunaPictureBox()
         Me.GunaPanel1.SuspendLayout()
-        CType(Me.GunaPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GunaPictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GunaPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GunaPanel1
@@ -59,16 +59,17 @@ Partial Class Form1
         Me.GunaPanel1.Size = New System.Drawing.Size(275, 469)
         Me.GunaPanel1.TabIndex = 0
         '
-        'GunaPictureBox1
+        'GunaLabel2
         '
-        Me.GunaPictureBox1.BaseColor = System.Drawing.Color.White
-        Me.GunaPictureBox1.Image = CType(resources.GetObject("GunaPictureBox1.Image"), System.Drawing.Image)
-        Me.GunaPictureBox1.Location = New System.Drawing.Point(-18, -14)
-        Me.GunaPictureBox1.Name = "GunaPictureBox1"
-        Me.GunaPictureBox1.Size = New System.Drawing.Size(310, 493)
-        Me.GunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.GunaPictureBox1.TabIndex = 0
-        Me.GunaPictureBox1.TabStop = False
+        Me.GunaLabel2.AutoSize = True
+        Me.GunaLabel2.BackColor = System.Drawing.Color.Transparent
+        Me.GunaLabel2.Font = New System.Drawing.Font("Segoe UI Symbol", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GunaLabel2.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.GunaLabel2.Location = New System.Drawing.Point(14, 430)
+        Me.GunaLabel2.Name = "GunaLabel2"
+        Me.GunaLabel2.Size = New System.Drawing.Size(141, 20)
+        Me.GunaLabel2.TabIndex = 1
+        Me.GunaLabel2.Text = "No Brain No Gain"
         '
         'BunifuElipse1
         '
@@ -154,7 +155,7 @@ Partial Class Form1
         '
         Me.GunaLabel1.AutoSize = True
         Me.GunaLabel1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.GunaLabel1.Location = New System.Drawing.Point(476, 342)
+        Me.GunaLabel1.Location = New System.Drawing.Point(476, 344)
         Me.GunaLabel1.Name = "GunaLabel1"
         Me.GunaLabel1.Size = New System.Drawing.Size(89, 15)
         Me.GunaLabel1.TabIndex = 7
@@ -244,17 +245,6 @@ Partial Class Form1
         Me.Panel1.Size = New System.Drawing.Size(903, 30)
         Me.Panel1.TabIndex = 16
         '
-        'GunaPictureBox2
-        '
-        Me.GunaPictureBox2.BaseColor = System.Drawing.Color.White
-        Me.GunaPictureBox2.Image = CType(resources.GetObject("GunaPictureBox2.Image"), System.Drawing.Image)
-        Me.GunaPictureBox2.Location = New System.Drawing.Point(445, 57)
-        Me.GunaPictureBox2.Name = "GunaPictureBox2"
-        Me.GunaPictureBox2.Size = New System.Drawing.Size(120, 101)
-        Me.GunaPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.GunaPictureBox2.TabIndex = 1
-        Me.GunaPictureBox2.TabStop = False
-        '
         'BunifuCustomLabel2
         '
         Me.BunifuCustomLabel2.AutoSize = True
@@ -275,16 +265,27 @@ Partial Class Form1
         Me.BunifuCustomLabel3.TabIndex = 18
         Me.BunifuCustomLabel3.Text = "Password"
         '
-        'GunaLabel2
+        'GunaPictureBox2
         '
-        Me.GunaLabel2.AutoSize = True
-        Me.GunaLabel2.BackColor = System.Drawing.Color.Transparent
-        Me.GunaLabel2.Font = New System.Drawing.Font("Segoe UI Symbol", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GunaLabel2.Location = New System.Drawing.Point(47, 367)
-        Me.GunaLabel2.Name = "GunaLabel2"
-        Me.GunaLabel2.Size = New System.Drawing.Size(192, 30)
-        Me.GunaLabel2.TabIndex = 1
-        Me.GunaLabel2.Text = "No Brain No Gain"
+        Me.GunaPictureBox2.BaseColor = System.Drawing.Color.White
+        Me.GunaPictureBox2.Image = CType(resources.GetObject("GunaPictureBox2.Image"), System.Drawing.Image)
+        Me.GunaPictureBox2.Location = New System.Drawing.Point(445, 57)
+        Me.GunaPictureBox2.Name = "GunaPictureBox2"
+        Me.GunaPictureBox2.Size = New System.Drawing.Size(120, 101)
+        Me.GunaPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.GunaPictureBox2.TabIndex = 1
+        Me.GunaPictureBox2.TabStop = False
+        '
+        'GunaPictureBox1
+        '
+        Me.GunaPictureBox1.BaseColor = System.Drawing.Color.White
+        Me.GunaPictureBox1.Image = CType(resources.GetObject("GunaPictureBox1.Image"), System.Drawing.Image)
+        Me.GunaPictureBox1.Location = New System.Drawing.Point(-18, -14)
+        Me.GunaPictureBox1.Name = "GunaPictureBox1"
+        Me.GunaPictureBox1.Size = New System.Drawing.Size(310, 493)
+        Me.GunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.GunaPictureBox1.TabIndex = 0
+        Me.GunaPictureBox1.TabStop = False
         '
         'Form1
         '
@@ -315,8 +316,8 @@ Partial Class Form1
         Me.Text = "Login"
         Me.GunaPanel1.ResumeLayout(False)
         Me.GunaPanel1.PerformLayout()
-        CType(Me.GunaPictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GunaPictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GunaPictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

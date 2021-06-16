@@ -18,7 +18,7 @@ Public Class Form1
                 connection.Close()
             End Using
         Catch ex As Exception
-            MsgBox(ex.Message)
+
             IPServerForm.Show()
 
         End Try
@@ -63,10 +63,19 @@ Public Class Form1
         If EmailTextBox.Text <> "" And PasswordTextBox.Text <> "" Then
             Dim cmd As New SqlCommand("SELECT count(*) FROM ADMINISTRATEUR WHERE SURNOM='" & EmailTextBox.Text & "' AND PASSWORD=HASHBYTES('SHA1','" & PasswordTextBox.Text & "')", connection)
             Dim count As Integer = Convert.ToInt16(cmd.ExecuteScalar())
+            Admin.Show()
+            Me.Hide()
 
         Else
             MessageBox.Show("Please fill the informrations")
         End If
     End Sub
 
+    Private Sub GunaControlBox2_Click(sender As Object, e As EventArgs) Handles GunaControlBox2.Click
+
+    End Sub
+
+    Private Sub GunaControlBox1_Click(sender As Object, e As EventArgs) Handles GunaControlBox1.Click
+
+    End Sub
 End Class

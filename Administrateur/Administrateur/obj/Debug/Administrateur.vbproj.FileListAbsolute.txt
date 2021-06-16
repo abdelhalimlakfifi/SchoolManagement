@@ -26,3 +26,5 @@ C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administ
 C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Loading.resources
 C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Resources.resources
 C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.vbproj.GenerateResource.Cache
+C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Admin.resources
+C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Dashboard.resources
