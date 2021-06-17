@@ -1,4 +1,4 @@
-﻿Public Class Admin
+﻿Public Class Home
 
     Private Sub GunaPanel1_Paint(sender As Object, e As PaintEventArgs) Handles GunaPanel1.Paint
 
@@ -13,4 +13,10 @@
     Private Sub GunaControlBox1_Click(sender As Object, e As EventArgs) Handles GunaControlBox1.Click
 
     End Sub
+
+    Private Sub GunaButton14_Click(sender As Object, e As EventArgs) Handles GunaButton14.Click
+
+    End Sub
+
+
 End Class

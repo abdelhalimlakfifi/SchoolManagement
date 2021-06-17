@@ -3,13 +3,13 @@ Imports System.IO
 Public Module ipAdress
     Public ip As String
 End Module
-Public Class Form1
+Public Class Login
     Dim MoveX, MoveY As Integer
     Dim newpoint As New Point
     Public ip As String
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        
+
         Try
             Using StreamReader As New StreamReader("Cookie.txt")
                 pdo.ConString = "Data Source=" & StreamReader.ReadLine() & ";Initial Catalog=miage;User ID=sa; Password=Miage@095006"
@@ -63,8 +63,7 @@ Public Class Form1
         If EmailTextBox.Text <> "" And PasswordTextBox.Text <> "" Then
             Dim cmd As New SqlCommand("SELECT count(*) FROM ADMINISTRATEUR WHERE SURNOM='" & EmailTextBox.Text & "' AND PASSWORD=HASHBYTES('SHA1','" & PasswordTextBox.Text & "')", connection)
             Dim count As Integer = Convert.ToInt16(cmd.ExecuteScalar())
-            Admin.Show()
-            Me.Hide()
+
 
         Else
             MessageBox.Show("Please fill the informrations")

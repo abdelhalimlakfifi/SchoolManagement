@@ -24,12 +24,12 @@ Public Class IPServerForm
         Me.TopMost = True
 
 
-        Form1.Enabled = False
+        Login.Enabled = False
     End Sub
 
     Private Sub GunaButton2_Click(sender As Object, e As EventArgs) Handles GunaButton2.Click
         If BunifuSwitch1.Value = True Then
-            Form1.Enabled = True
+            Login.Enabled = True
             Me.Close()
 
         Else

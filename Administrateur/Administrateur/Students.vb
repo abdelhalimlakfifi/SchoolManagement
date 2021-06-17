@@ -5,14 +5,14 @@ Public Class Students
 
     Private Sub GunaButton1_Click(sender As Object, e As EventArgs) Handles GunaButton1.Click
         OpenFileDialog1.ShowDialog()
-        BunifuMaterialTextbox2.Text = OpenFileDialog1.FileName
+        BunifuMaterialTextbox11.Text = OpenFileDialog1.FileName
     End Sub
 
     Private Sub BunifuMaterialTextbox11_OnValueChanged(sender As Object, e As EventArgs) Handles BunifuMaterialTextbox11.OnValueChanged
-        If (System.IO.File.Exists(BunifuMaterialTextbox2.Text)) Then
-            GunaPictureBox2.Image = Image.FromFile(BunifuMaterialTextbox2.Text)
+        If (System.IO.File.Exists(BunifuMaterialTextbox11.Text)) Then
+            GunaPictureBox2.Image = Image.FromFile(BunifuMaterialTextbox11.Text)
         End If
-        If BunifuMaterialTextbox2.Text = "" Then
+        If BunifuMaterialTextbox11.Text = "" Then
             GunaPictureBox2.Hide()
         Else
             GunaPictureBox2.Show()
