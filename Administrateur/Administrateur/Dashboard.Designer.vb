@@ -130,6 +130,7 @@ Partial Class Dashboard
         Me.ClientSize = New System.Drawing.Size(821, 551)
         Me.Controls.Add(Me.GunaPanel2)
         Me.Controls.Add(Me.Button1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Dashboard"
         Me.Text = "Dashboard"
         Me.GunaPanel2.ResumeLayout(False)
