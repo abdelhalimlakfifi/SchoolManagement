@@ -102,4 +102,7 @@
     Private Sub GunaButton9_Click(sender As Object, e As EventArgs) Handles GunaButton9.Click
         switchPanel(Classes)
     End Sub
+    Private Sub GunaButton8_Click(sender As Object, e As EventArgs) Handles GunaButton8.Click
+        switchPanel(PaymentHistorique)
+    End Sub
 End Class
