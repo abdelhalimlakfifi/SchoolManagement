@@ -98,4 +98,8 @@
     Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
 
     End Sub
+
+    Private Sub GunaButton9_Click(sender As Object, e As EventArgs) Handles GunaButton9.Click
+        switchPanel(Classes)
+    End Sub
 End Class

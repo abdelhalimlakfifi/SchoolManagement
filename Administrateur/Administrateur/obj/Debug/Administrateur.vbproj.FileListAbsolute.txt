@@ -42,3 +42,6 @@ C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\
 C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.PaymentForm.resources
 C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.AbsencesForm.resources
 C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.TechersForms.resources
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.gradeForm.resources
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Modules.resources
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.PopUp.resources

@@ -84,6 +84,12 @@
     <Compile Include="AbsencesForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="gradeForm.Designer.vb">
+      <DependentUpon>gradeForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="gradeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Home.Designer.vb">
       <DependentUpon>Home.vb</DependentUpon>
     </Compile>
@@ -139,6 +145,12 @@
     <Compile Include="Loading.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Modules.Designer.vb">
+      <DependentUpon>Modules.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -161,6 +173,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="pdo.vb" />
+    <Compile Include="PopUp.Designer.vb">
+      <DependentUpon>PopUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Students.Designer.vb">
       <DependentUpon>Students.vb</DependentUpon>
     </Compile>
@@ -177,6 +195,9 @@
   <ItemGroup>
     <EmbeddedResource Include="AbsencesForm.resx">
       <DependentUpon>AbsencesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gradeForm.resx">
+      <DependentUpon>gradeForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.vb</DependentUpon>
@@ -205,6 +226,9 @@
     <EmbeddedResource Include="Loading.resx">
       <DependentUpon>Loading.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modules.resx">
+      <DependentUpon>Modules.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -213,6 +237,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PaymentForm.resx">
       <DependentUpon>PaymentForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUp.resx">
+      <DependentUpon>PopUp.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Students.resx">
       <DependentUpon>Students.vb</DependentUpon>

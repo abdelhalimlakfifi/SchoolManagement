@@ -23,41 +23,37 @@ Partial Class Classes
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Classes))
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Me.GunaRadioButton1 = New Guna.UI.WinForms.GunaRadioButton()
-        Me.GunaRadioButton2 = New Guna.UI.WinForms.GunaRadioButton()
+        Me.BranchRadioButton1 = New Guna.UI.WinForms.GunaRadioButton()
+        Me.CoursesRadioButton2 = New Guna.UI.WinForms.GunaRadioButton()
         Me.GunaLabel12 = New Guna.UI.WinForms.GunaLabel()
-        Me.GunaPictureBox1 = New Guna.UI.WinForms.GunaPictureBox()
-        Me.BunifuCustomDataGrid1 = New ns1.BunifuCustomDataGrid()
         Me.GunaPanel1 = New Guna.UI.WinForms.GunaPanel()
+        Me.GunaPictureBox1 = New Guna.UI.WinForms.GunaPictureBox()
         CType(Me.GunaPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BunifuCustomDataGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'GunaRadioButton1
+        'BranchRadioButton1
         '
-        Me.GunaRadioButton1.BaseColor = System.Drawing.SystemColors.Control
-        Me.GunaRadioButton1.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaRadioButton1.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaRadioButton1.FillColor = System.Drawing.Color.White
-        Me.GunaRadioButton1.Location = New System.Drawing.Point(62, 178)
-        Me.GunaRadioButton1.Name = "GunaRadioButton1"
-        Me.GunaRadioButton1.Size = New System.Drawing.Size(72, 20)
-        Me.GunaRadioButton1.TabIndex = 0
-        Me.GunaRadioButton1.Text = "Branche"
+        Me.BranchRadioButton1.BaseColor = System.Drawing.SystemColors.Control
+        Me.BranchRadioButton1.CheckedOffColor = System.Drawing.Color.Gray
+        Me.BranchRadioButton1.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BranchRadioButton1.FillColor = System.Drawing.Color.White
+        Me.BranchRadioButton1.Location = New System.Drawing.Point(62, 178)
+        Me.BranchRadioButton1.Name = "BranchRadioButton1"
+        Me.BranchRadioButton1.Size = New System.Drawing.Size(72, 20)
+        Me.BranchRadioButton1.TabIndex = 0
+        Me.BranchRadioButton1.Text = "Branche"
         '
-        'GunaRadioButton2
+        'CoursesRadioButton2
         '
-        Me.GunaRadioButton2.BaseColor = System.Drawing.SystemColors.Control
-        Me.GunaRadioButton2.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaRadioButton2.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaRadioButton2.FillColor = System.Drawing.Color.White
-        Me.GunaRadioButton2.Location = New System.Drawing.Point(61, 235)
-        Me.GunaRadioButton2.Name = "GunaRadioButton2"
-        Me.GunaRadioButton2.Size = New System.Drawing.Size(73, 20)
-        Me.GunaRadioButton2.TabIndex = 1
-        Me.GunaRadioButton2.Text = "Modules"
+        Me.CoursesRadioButton2.BaseColor = System.Drawing.SystemColors.Control
+        Me.CoursesRadioButton2.CheckedOffColor = System.Drawing.Color.Gray
+        Me.CoursesRadioButton2.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CoursesRadioButton2.FillColor = System.Drawing.Color.White
+        Me.CoursesRadioButton2.Location = New System.Drawing.Point(61, 235)
+        Me.CoursesRadioButton2.Name = "CoursesRadioButton2"
+        Me.CoursesRadioButton2.Size = New System.Drawing.Size(72, 20)
+        Me.CoursesRadioButton2.TabIndex = 1
+        Me.CoursesRadioButton2.Text = "Courses"
         '
         'GunaLabel12
         '
@@ -71,6 +67,13 @@ Partial Class Classes
         Me.GunaLabel12.TabIndex = 24
         Me.GunaLabel12.Text = "𝐂𝐨𝐝𝐢𝐒𝐜𝐡𝐨𝐨𝐥"
         '
+        'GunaPanel1
+        '
+        Me.GunaPanel1.Location = New System.Drawing.Point(140, 83)
+        Me.GunaPanel1.Name = "GunaPanel1"
+        Me.GunaPanel1.Size = New System.Drawing.Size(726, 463)
+        Me.GunaPanel1.TabIndex = 27
+        '
         'GunaPictureBox1
         '
         Me.GunaPictureBox1.BackColor = System.Drawing.Color.Transparent
@@ -83,63 +86,27 @@ Partial Class Classes
         Me.GunaPictureBox1.TabIndex = 23
         Me.GunaPictureBox1.TabStop = False
         '
-        'BunifuCustomDataGrid1
-        '
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        Me.BunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro
-        Me.BunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.BunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.BunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.BunifuCustomDataGrid1.DoubleBuffered = True
-        Me.BunifuCustomDataGrid1.EnableHeadersVisualStyles = False
-        Me.BunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.SeaGreen
-        Me.BunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.SeaGreen
-        Me.BunifuCustomDataGrid1.Location = New System.Drawing.Point(214, 165)
-        Me.BunifuCustomDataGrid1.Name = "BunifuCustomDataGrid1"
-        Me.BunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.BunifuCustomDataGrid1.Size = New System.Drawing.Size(584, 227)
-        Me.BunifuCustomDataGrid1.TabIndex = 25
-        '
-        'GunaPanel1
-        '
-        Me.GunaPanel1.Location = New System.Drawing.Point(214, 411)
-        Me.GunaPanel1.Name = "GunaPanel1"
-        Me.GunaPanel1.Size = New System.Drawing.Size(584, 150)
-        Me.GunaPanel1.TabIndex = 27
-        '
         'Classes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(878, 573)
         Me.Controls.Add(Me.GunaPanel1)
-        Me.Controls.Add(Me.BunifuCustomDataGrid1)
         Me.Controls.Add(Me.GunaLabel12)
         Me.Controls.Add(Me.GunaPictureBox1)
-        Me.Controls.Add(Me.GunaRadioButton2)
-        Me.Controls.Add(Me.GunaRadioButton1)
+        Me.Controls.Add(Me.CoursesRadioButton2)
+        Me.Controls.Add(Me.BranchRadioButton1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Classes"
         Me.Text = "Classes"
         CType(Me.GunaPictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BunifuCustomDataGrid1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents GunaRadioButton1 As Guna.UI.WinForms.GunaRadioButton
-    Friend WithEvents GunaRadioButton2 As Guna.UI.WinForms.GunaRadioButton
+    Friend WithEvents BranchRadioButton1 As Guna.UI.WinForms.GunaRadioButton
+    Friend WithEvents CoursesRadioButton2 As Guna.UI.WinForms.GunaRadioButton
     Friend WithEvents GunaLabel12 As Guna.UI.WinForms.GunaLabel
     Friend WithEvents GunaPictureBox1 As Guna.UI.WinForms.GunaPictureBox
-    Friend WithEvents BunifuCustomDataGrid1 As ns1.BunifuCustomDataGrid
     Friend WithEvents GunaPanel1 As Guna.UI.WinForms.GunaPanel
 End Class
