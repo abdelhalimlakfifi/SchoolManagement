@@ -78,6 +78,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbsencesForm.Designer.vb">
+      <DependentUpon>AbsencesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AbsencesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Home.Designer.vb">
       <DependentUpon>Home.vb</DependentUpon>
     </Compile>
@@ -148,27 +154,30 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="PaymentForm.Designer.vb">
+      <DependentUpon>PaymentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="pdo.vb" />
-    <Compile Include="ProfAdd.Designer.vb">
-      <DependentUpon>ProfAdd.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ProfAdd.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StdAdd.Designer.vb">
-      <DependentUpon>StdAdd.vb</DependentUpon>
-    </Compile>
-    <Compile Include="StdAdd.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Students.Designer.vb">
       <DependentUpon>Students.vb</DependentUpon>
     </Compile>
     <Compile Include="Students.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TechersForms.Designer.vb">
+      <DependentUpon>TechersForms.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TechersForms.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AbsencesForm.resx">
+      <DependentUpon>AbsencesForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.vb</DependentUpon>
     </EmbeddedResource>
@@ -202,14 +211,14 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProfAdd.resx">
-      <DependentUpon>ProfAdd.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StdAdd.resx">
-      <DependentUpon>StdAdd.vb</DependentUpon>
+    <EmbeddedResource Include="PaymentForm.resx">
+      <DependentUpon>PaymentForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Students.resx">
       <DependentUpon>Students.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TechersForms.resx">
+      <DependentUpon>TechersForms.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

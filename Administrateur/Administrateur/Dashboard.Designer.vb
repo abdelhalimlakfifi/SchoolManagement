@@ -26,9 +26,9 @@ Partial Class Dashboard
         Me.Button1 = New System.Windows.Forms.Button()
         Me.GunaPanel2 = New Guna.UI.WinForms.GunaPanel()
         Me.GunaTextBox3 = New Guna.UI.WinForms.GunaTextBox()
+        Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar()
         Me.GunaTextBox2 = New Guna.UI.WinForms.GunaTextBox()
         Me.GunaTextBox1 = New Guna.UI.WinForms.GunaTextBox()
-        Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar()
         Me.GunaPanel2.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -63,7 +63,7 @@ Partial Class Dashboard
         Me.GunaTextBox3.FocusedForeColor = System.Drawing.SystemColors.ControlText
         Me.GunaTextBox3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GunaTextBox3.ForeColor = System.Drawing.Color.LightGray
-        Me.GunaTextBox3.Location = New System.Drawing.Point(0, 395)
+        Me.GunaTextBox3.Location = New System.Drawing.Point(29, 351)
         Me.GunaTextBox3.Name = "GunaTextBox3"
         Me.GunaTextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.GunaTextBox3.Radius = 20
@@ -72,6 +72,12 @@ Partial Class Dashboard
         Me.GunaTextBox3.TabIndex = 3
         Me.GunaTextBox3.Text = "Staff"
         Me.GunaTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'MonthCalendar1
+        '
+        Me.MonthCalendar1.Location = New System.Drawing.Point(500, 167)
+        Me.MonthCalendar1.Name = "MonthCalendar1"
+        Me.MonthCalendar1.TabIndex = 2
         '
         'GunaTextBox2
         '
@@ -84,7 +90,7 @@ Partial Class Dashboard
         Me.GunaTextBox2.FocusedForeColor = System.Drawing.SystemColors.ControlText
         Me.GunaTextBox2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GunaTextBox2.ForeColor = System.Drawing.Color.LightGray
-        Me.GunaTextBox2.Location = New System.Drawing.Point(0, 235)
+        Me.GunaTextBox2.Location = New System.Drawing.Point(29, 191)
         Me.GunaTextBox2.Name = "GunaTextBox2"
         Me.GunaTextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.GunaTextBox2.Radius = 20
@@ -107,7 +113,7 @@ Partial Class Dashboard
         Me.GunaTextBox1.FocusedForeColor = System.Drawing.SystemColors.ControlText
         Me.GunaTextBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Underline)
         Me.GunaTextBox1.ForeColor = System.Drawing.Color.LightGray
-        Me.GunaTextBox1.Location = New System.Drawing.Point(0, 66)
+        Me.GunaTextBox1.Location = New System.Drawing.Point(29, 22)
         Me.GunaTextBox1.Name = "GunaTextBox1"
         Me.GunaTextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.GunaTextBox1.Radius = 20
@@ -117,19 +123,14 @@ Partial Class Dashboard
         Me.GunaTextBox1.Text = "Students" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.GunaTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'MonthCalendar1
-        '
-        Me.MonthCalendar1.Location = New System.Drawing.Point(584, 185)
-        Me.MonthCalendar1.Name = "MonthCalendar1"
-        Me.MonthCalendar1.TabIndex = 2
-        '
         'Dashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(821, 551)
+        Me.ClientSize = New System.Drawing.Size(801, 476)
         Me.Controls.Add(Me.GunaPanel2)
         Me.Controls.Add(Me.Button1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Dashboard"
         Me.Text = "Dashboard"
         Me.GunaPanel2.ResumeLayout(False)
