@@ -47,3 +47,4 @@ C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\
 C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.PaymentHistorique.resources
 C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Course_branches.resources
 C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.New_Class.resources
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.AdminForms.resources

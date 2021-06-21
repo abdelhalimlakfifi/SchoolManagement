@@ -37,7 +37,7 @@ Public Class PopUp
         Dim i As Integer
         For i = 0 To GunaDataGridView1.Rows.Count - 1
             If CBool(GunaDataGridView1.Rows(i).Cells(0).Value) Then
-                MsgBox(GunaDataGridView1.Rows(i).Cells(2).Value)
+
                 cmd = New SqlCommand("INSERT INTO INTEGRATION (ID_FILIER, ID_MODULE) VALUES(" & GunaDataGridView1.Rows(i).Cells(1).Value & "," & GunaDataGridView1.Rows(i).Cells(1).Value & ");", con)
                 Try
                     cmd.ExecuteScalar()

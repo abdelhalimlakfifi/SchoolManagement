@@ -84,6 +84,12 @@
     <Compile Include="AbsencesForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="AdminForms.Designer.vb">
+      <DependentUpon>AdminForms.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForms.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Classes.Designer.vb">
       <DependentUpon>Classes.vb</DependentUpon>
     </Compile>
@@ -207,6 +213,9 @@
   <ItemGroup>
     <EmbeddedResource Include="AbsencesForm.resx">
       <DependentUpon>AbsencesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForms.resx">
+      <DependentUpon>AdminForms.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Classes.resx">
       <DependentUpon>Classes.vb</DependentUpon>

@@ -88,6 +88,7 @@ Public Class Students
             FtpFolderCreate("ftp://" & pdo.ipServer & "/students/" & foldername & "/", "miage", "miage")
             My.Computer.Network.UploadFile(PicturePathTextbox.Text, "ftp://" & pdo.ipServer & "/" & "Administration/Student_Pictures/" & foldername & ".jpg", "miage", "miage", True, 500)
         Catch ex As Exception
+            MsgBox(ex.Message)
             MsgBox("Username already exist")
         End Try
         

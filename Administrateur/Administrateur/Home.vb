@@ -109,4 +109,12 @@
     Private Sub GunaButton3_Click(sender As Object, e As EventArgs) Handles GunaButton3.Click
         switchPanel(Classes)
     End Sub
+
+    Private Sub GunaButton11_Click(sender As Object, e As EventArgs) Handles GunaButton11.Click
+        switchPanel(gradeForm)
+    End Sub
+
+    Private Sub GunaButton6_Click(sender As Object, e As EventArgs) Handles GunaButton6.Click
+        switchPanel(AdminForms)
+    End Sub
 End Class
