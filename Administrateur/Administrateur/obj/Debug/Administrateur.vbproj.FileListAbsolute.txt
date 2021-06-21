@@ -37,7 +37,6 @@ C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\
 C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Classes.resources
 C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Dashboard.resources
 C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Login.resources
-C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Historique.resources
 C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Students.resources
 C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.PaymentForm.resources
 C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.AbsencesForm.resources
@@ -46,3 +45,5 @@ C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\
 C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Modules.resources
 C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.PopUp.resources
 C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.PaymentHistorique.resources
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Course_branches.resources
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.New_Class.resources

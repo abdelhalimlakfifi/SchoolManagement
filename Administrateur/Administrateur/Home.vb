@@ -100,9 +100,13 @@
     End Sub
 
     Private Sub GunaButton9_Click(sender As Object, e As EventArgs) Handles GunaButton9.Click
-        switchPanel(Classes)
+        switchPanel(Course_branches)
     End Sub
     Private Sub GunaButton8_Click(sender As Object, e As EventArgs) Handles GunaButton8.Click
         switchPanel(PaymentHistorique)
+    End Sub
+
+    Private Sub GunaButton3_Click(sender As Object, e As EventArgs) Handles GunaButton3.Click
+        switchPanel(Classes)
     End Sub
 End Class
