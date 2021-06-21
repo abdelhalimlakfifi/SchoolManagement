@@ -225,6 +225,7 @@ Partial Class Students
         Me.GunaPictureBox2.Location = New System.Drawing.Point(611, 153)
         Me.GunaPictureBox2.Name = "GunaPictureBox2"
         Me.GunaPictureBox2.Size = New System.Drawing.Size(200, 152)
+        Me.GunaPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.GunaPictureBox2.TabIndex = 24
         Me.GunaPictureBox2.TabStop = False
         '

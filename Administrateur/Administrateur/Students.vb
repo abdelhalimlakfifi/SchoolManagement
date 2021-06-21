@@ -22,4 +22,8 @@ Public Class Students
     Private Sub BunifuMaterialTextbox10_OnValueChanged(sender As Object, e As EventArgs) Handles BunifuMaterialTextbox10.OnValueChanged
 
     End Sub
+
+    Private Sub GunaPictureBox1_Click(sender As Object, e As EventArgs) Handles GunaPictureBox1.Click
+
+    End Sub
 End Class

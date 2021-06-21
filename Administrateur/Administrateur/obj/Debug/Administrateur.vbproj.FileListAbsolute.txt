@@ -21,14 +21,21 @@ C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administ
 C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\bin\Debug\Administrateur.pdb
 C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\bin\Debug\Administrateur.xml
 C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.vbprojResolveAssemblyReference.cache
-C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Form1.resources
 C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.IPServerForm.resources
 C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Loading.resources
 C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Resources.resources
 C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.vbproj.GenerateResource.Cache
-C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Admin.resources
 C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Dashboard.resources
 C:\Users\Tenk-i\Desktop\SchoolManagment - Copy\SchoolManagement\Administrateur\Administrateur\bin\Debug\Administrateur.exe.config
 C:\Users\Tenk-i\Desktop\SchoolManagment - Copy\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.exe
 C:\Users\Tenk-i\Desktop\SchoolManagment - Copy\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.xml
 C:\Users\Tenk-i\Desktop\SchoolManagment - Copy\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.pdb
+C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Home.resources
+C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Administrator.resources
+C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Branches.resources
+C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Classes.resources
+C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Login.resources
+C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Historique.resources
+C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.ProfAdd.resources
+C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.StdAdd.resources
+C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Students.resources
