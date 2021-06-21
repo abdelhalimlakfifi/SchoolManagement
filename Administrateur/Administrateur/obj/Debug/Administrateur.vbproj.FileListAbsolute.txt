@@ -1,0 +1,50 @@
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\bin\Debug\Administrateur.exe.config
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\bin\Debug\Administrateur.exe
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\bin\Debug\Administrateur.pdb
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\bin\Debug\Administrateur.xml
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\bin\Debug\Guna.UI.dll
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.IPServerForm.resources
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Resources.resources
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.vbproj.GenerateResource.Cache
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.exe
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.xml
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.pdb
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\bin\Debug\Bunifu_UI_v1.52.dll
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.vbprojResolveAssemblyReference.cache
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Loading.resources
+C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\bin\Debug\Administrateur.exe.config
+C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.exe
+C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.xml
+C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.pdb
+C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\bin\Debug\Administrateur.exe
+C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\bin\Debug\Administrateur.pdb
+C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\bin\Debug\Administrateur.xml
+C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.vbprojResolveAssemblyReference.cache
+C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Form1.resources
+C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.IPServerForm.resources
+C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Loading.resources
+C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Resources.resources
+C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.vbproj.GenerateResource.Cache
+C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Admin.resources
+C:\Users\Tenk-i\Desktop\SchoolManagment\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Dashboard.resources
+C:\Users\Tenk-i\Desktop\SchoolManagment - Copy\SchoolManagement\Administrateur\Administrateur\bin\Debug\Administrateur.exe.config
+C:\Users\Tenk-i\Desktop\SchoolManagment - Copy\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.exe
+C:\Users\Tenk-i\Desktop\SchoolManagment - Copy\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.xml
+C:\Users\Tenk-i\Desktop\SchoolManagment - Copy\SchoolManagement\Administrateur\Administrateur\obj\Debug\Administrateur.pdb
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Home.resources
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Administrator.resources
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Branches.resources
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Classes.resources
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Dashboard.resources
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Login.resources
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Students.resources
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.PaymentForm.resources
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.AbsencesForm.resources
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.TechersForms.resources
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.gradeForm.resources
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Modules.resources
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.PopUp.resources
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.PaymentHistorique.resources
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.Course_branches.resources
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.New_Class.resources
+C:\Users\Pitcho\Desktop\MiageManagement\Administrateur\Administrateur\obj\Debug\Administrateur.AdminForms.resources
