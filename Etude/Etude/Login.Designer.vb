@@ -31,13 +31,17 @@ Partial Class Login
         Me.BunifuCheckbox1 = New ns1.BunifuCheckbox()
         Me.GunaPictureBox2 = New Guna.UI.WinForms.GunaPictureBox()
         Me.GunaButton1 = New Guna.UI.WinForms.GunaButton()
-        Me.BunifuMaterialTextbox2 = New ns1.BunifuMaterialTextbox()
-        Me.BunifuMaterialTextbox1 = New ns1.BunifuMaterialTextbox()
+        Me.PasswordTextbox = New ns1.BunifuMaterialTextbox()
+        Me.UsernameTextbox = New ns1.BunifuMaterialTextbox()
         Me.GunaPanel1 = New Guna.UI.WinForms.GunaPanel()
         Me.GunaPictureBox1 = New Guna.UI.WinForms.GunaPictureBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.GunaControlBox2 = New Guna.UI.WinForms.GunaControlBox()
+        Me.GunaControlBox1 = New Guna.UI.WinForms.GunaControlBox()
         CType(Me.GunaPictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GunaPanel1.SuspendLayout()
         CType(Me.GunaPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'GunaElipse1
@@ -123,43 +127,43 @@ Partial Class Login
         Me.GunaButton1.Text = "Login"
         Me.GunaButton1.TextOffsetX = 15
         '
-        'BunifuMaterialTextbox2
+        'PasswordTextbox
         '
-        Me.BunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuMaterialTextbox2.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.BunifuMaterialTextbox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.Empty
-        Me.BunifuMaterialTextbox2.HintText = ""
-        Me.BunifuMaterialTextbox2.isPassword = True
-        Me.BunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.Blue
-        Me.BunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.Gray
-        Me.BunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.Blue
-        Me.BunifuMaterialTextbox2.LineThickness = 3
-        Me.BunifuMaterialTextbox2.Location = New System.Drawing.Point(505, 263)
-        Me.BunifuMaterialTextbox2.Margin = New System.Windows.Forms.Padding(4)
-        Me.BunifuMaterialTextbox2.Name = "BunifuMaterialTextbox2"
-        Me.BunifuMaterialTextbox2.Size = New System.Drawing.Size(233, 40)
-        Me.BunifuMaterialTextbox2.TabIndex = 23
-        Me.BunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.PasswordTextbox.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.PasswordTextbox.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.PasswordTextbox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.PasswordTextbox.HintForeColor = System.Drawing.Color.Empty
+        Me.PasswordTextbox.HintText = "Password"
+        Me.PasswordTextbox.isPassword = True
+        Me.PasswordTextbox.LineFocusedColor = System.Drawing.Color.Blue
+        Me.PasswordTextbox.LineIdleColor = System.Drawing.Color.Gray
+        Me.PasswordTextbox.LineMouseHoverColor = System.Drawing.Color.Blue
+        Me.PasswordTextbox.LineThickness = 3
+        Me.PasswordTextbox.Location = New System.Drawing.Point(505, 263)
+        Me.PasswordTextbox.Margin = New System.Windows.Forms.Padding(4)
+        Me.PasswordTextbox.Name = "PasswordTextbox"
+        Me.PasswordTextbox.Size = New System.Drawing.Size(233, 40)
+        Me.PasswordTextbox.TabIndex = 23
+        Me.PasswordTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
-        'BunifuMaterialTextbox1
+        'UsernameTextbox
         '
-        Me.BunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuMaterialTextbox1.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.BunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty
-        Me.BunifuMaterialTextbox1.HintText = ""
-        Me.BunifuMaterialTextbox1.isPassword = False
-        Me.BunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.Blue
-        Me.BunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray
-        Me.BunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.Blue
-        Me.BunifuMaterialTextbox1.LineThickness = 3
-        Me.BunifuMaterialTextbox1.Location = New System.Drawing.Point(505, 181)
-        Me.BunifuMaterialTextbox1.Margin = New System.Windows.Forms.Padding(4)
-        Me.BunifuMaterialTextbox1.Name = "BunifuMaterialTextbox1"
-        Me.BunifuMaterialTextbox1.Size = New System.Drawing.Size(233, 40)
-        Me.BunifuMaterialTextbox1.TabIndex = 22
-        Me.BunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.UsernameTextbox.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.UsernameTextbox.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.UsernameTextbox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.UsernameTextbox.HintForeColor = System.Drawing.Color.Empty
+        Me.UsernameTextbox.HintText = "Username"
+        Me.UsernameTextbox.isPassword = False
+        Me.UsernameTextbox.LineFocusedColor = System.Drawing.Color.Blue
+        Me.UsernameTextbox.LineIdleColor = System.Drawing.Color.Gray
+        Me.UsernameTextbox.LineMouseHoverColor = System.Drawing.Color.Blue
+        Me.UsernameTextbox.LineThickness = 3
+        Me.UsernameTextbox.Location = New System.Drawing.Point(505, 181)
+        Me.UsernameTextbox.Margin = New System.Windows.Forms.Padding(4)
+        Me.UsernameTextbox.Name = "UsernameTextbox"
+        Me.UsernameTextbox.Size = New System.Drawing.Size(233, 40)
+        Me.UsernameTextbox.TabIndex = 22
+        Me.UsernameTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'GunaPanel1
         '
@@ -180,6 +184,47 @@ Partial Class Login
         Me.GunaPictureBox1.TabIndex = 4
         Me.GunaPictureBox1.TabStop = False
         '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.GunaControlBox2)
+        Me.Panel1.Controls.Add(Me.GunaControlBox1)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(903, 29)
+        Me.Panel1.TabIndex = 30
+        '
+        'GunaControlBox2
+        '
+        Me.GunaControlBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GunaControlBox2.AnimationHoverSpeed = 0.07!
+        Me.GunaControlBox2.AnimationSpeed = 0.03!
+        Me.GunaControlBox2.ControlBoxType = Guna.UI.WinForms.FormControlBoxType.MinimizeBox
+        Me.GunaControlBox2.IconColor = System.Drawing.Color.Black
+        Me.GunaControlBox2.IconSize = 15.0!
+        Me.GunaControlBox2.Location = New System.Drawing.Point(809, -1)
+        Me.GunaControlBox2.Name = "GunaControlBox2"
+        Me.GunaControlBox2.OnHoverBackColor = System.Drawing.Color.FromArgb(CType(CType(103, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(183, Byte), Integer))
+        Me.GunaControlBox2.OnHoverIconColor = System.Drawing.Color.White
+        Me.GunaControlBox2.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaControlBox2.Size = New System.Drawing.Size(45, 29)
+        Me.GunaControlBox2.TabIndex = 1
+        '
+        'GunaControlBox1
+        '
+        Me.GunaControlBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GunaControlBox1.AnimationHoverSpeed = 0.07!
+        Me.GunaControlBox1.AnimationSpeed = 0.03!
+        Me.GunaControlBox1.IconColor = System.Drawing.Color.Black
+        Me.GunaControlBox1.IconSize = 15.0!
+        Me.GunaControlBox1.Location = New System.Drawing.Point(858, 0)
+        Me.GunaControlBox1.Name = "GunaControlBox1"
+        Me.GunaControlBox1.OnHoverBackColor = System.Drawing.Color.FromArgb(CType(CType(103, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(183, Byte), Integer))
+        Me.GunaControlBox1.OnHoverIconColor = System.Drawing.Color.White
+        Me.GunaControlBox1.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaControlBox1.Size = New System.Drawing.Size(45, 29)
+        Me.GunaControlBox1.TabIndex = 0
+        '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -191,15 +236,17 @@ Partial Class Login
         Me.Controls.Add(Me.BunifuCheckbox1)
         Me.Controls.Add(Me.GunaPictureBox2)
         Me.Controls.Add(Me.GunaButton1)
-        Me.Controls.Add(Me.BunifuMaterialTextbox2)
-        Me.Controls.Add(Me.BunifuMaterialTextbox1)
+        Me.Controls.Add(Me.PasswordTextbox)
+        Me.Controls.Add(Me.UsernameTextbox)
         Me.Controls.Add(Me.GunaPanel1)
+        Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Login"
         Me.Text = "Login"
         CType(Me.GunaPictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GunaPanel1.ResumeLayout(False)
         CType(Me.GunaPictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -210,9 +257,12 @@ Partial Class Login
     Friend WithEvents GunaLabel1 As Guna.UI.WinForms.GunaLabel
     Friend WithEvents BunifuCheckbox1 As ns1.BunifuCheckbox
     Friend WithEvents GunaPictureBox2 As Guna.UI.WinForms.GunaPictureBox
-    Friend WithEvents BunifuMaterialTextbox2 As ns1.BunifuMaterialTextbox
-    Friend WithEvents BunifuMaterialTextbox1 As ns1.BunifuMaterialTextbox
+    Friend WithEvents PasswordTextbox As ns1.BunifuMaterialTextbox
+    Friend WithEvents UsernameTextbox As ns1.BunifuMaterialTextbox
     Friend WithEvents GunaPanel1 As Guna.UI.WinForms.GunaPanel
     Friend WithEvents GunaPictureBox1 As Guna.UI.WinForms.GunaPictureBox
     Friend WithEvents GunaButton1 As Guna.UI.WinForms.GunaButton
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents GunaControlBox2 As Guna.UI.WinForms.GunaControlBox
+    Friend WithEvents GunaControlBox1 As Guna.UI.WinForms.GunaControlBox
 End Class
