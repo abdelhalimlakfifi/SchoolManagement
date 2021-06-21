@@ -26,10 +26,9 @@ Partial Class Login
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
         Me.GunaPanel1 = New Guna.UI.WinForms.GunaPanel()
         Me.GunaLabel2 = New Guna.UI.WinForms.GunaLabel()
+        Me.GunaPictureBox1 = New Guna.UI.WinForms.GunaPictureBox()
         Me.BunifuElipse1 = New ns1.BunifuElipse(Me.components)
         Me.GunaButton1 = New Guna.UI.WinForms.GunaButton()
-        Me.EmailTextBox = New ns1.BunifuMaterialTextbox()
-        Me.PasswordTextBox = New ns1.BunifuMaterialTextbox()
         Me.GunaSwitch1 = New Guna.UI.WinForms.GunaSwitch()
         Me.GunaLabel1 = New Guna.UI.WinForms.GunaLabel()
         Me.BunifuCustomLabel1 = New ns1.BunifuCustomLabel()
@@ -40,13 +39,12 @@ Partial Class Login
         Me.GunaControlBox1 = New Guna.UI.WinForms.GunaControlBox()
         Me.GunaControlBox2 = New Guna.UI.WinForms.GunaControlBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.BunifuCustomLabel2 = New ns1.BunifuCustomLabel()
-        Me.BunifuCustomLabel3 = New ns1.BunifuCustomLabel()
         Me.GunaPictureBox2 = New Guna.UI.WinForms.GunaPictureBox()
-        Me.GunaPictureBox1 = New Guna.UI.WinForms.GunaPictureBox()
+        Me.EmailTextBox = New ns1.BunifuMaterialTextbox()
+        Me.PasswordTextBox = New ns1.BunifuMaterialTextbox()
         Me.GunaPanel1.SuspendLayout()
-        CType(Me.GunaPictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GunaPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GunaPictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GunaPanel1
@@ -70,6 +68,17 @@ Partial Class Login
         Me.GunaLabel2.Size = New System.Drawing.Size(141, 20)
         Me.GunaLabel2.TabIndex = 1
         Me.GunaLabel2.Text = "No Brain No Gain"
+        '
+        'GunaPictureBox1
+        '
+        Me.GunaPictureBox1.BaseColor = System.Drawing.Color.White
+        Me.GunaPictureBox1.Image = CType(resources.GetObject("GunaPictureBox1.Image"), System.Drawing.Image)
+        Me.GunaPictureBox1.Location = New System.Drawing.Point(-18, -14)
+        Me.GunaPictureBox1.Name = "GunaPictureBox1"
+        Me.GunaPictureBox1.Size = New System.Drawing.Size(310, 493)
+        Me.GunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.GunaPictureBox1.TabIndex = 0
+        Me.GunaPictureBox1.TabStop = False
         '
         'BunifuElipse1
         '
@@ -102,44 +111,6 @@ Partial Class Login
         Me.GunaButton1.Text = "Login"
         Me.GunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'EmailTextBox
-        '
-        Me.EmailTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.EmailTextBox.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.EmailTextBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.EmailTextBox.HintForeColor = System.Drawing.Color.Empty
-        Me.EmailTextBox.HintText = ""
-        Me.EmailTextBox.isPassword = False
-        Me.EmailTextBox.LineFocusedColor = System.Drawing.Color.Blue
-        Me.EmailTextBox.LineIdleColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(92, Byte), Integer))
-        Me.EmailTextBox.LineMouseHoverColor = System.Drawing.Color.Blue
-        Me.EmailTextBox.LineThickness = 3
-        Me.EmailTextBox.Location = New System.Drawing.Point(432, 206)
-        Me.EmailTextBox.Margin = New System.Windows.Forms.Padding(4)
-        Me.EmailTextBox.Name = "EmailTextBox"
-        Me.EmailTextBox.Size = New System.Drawing.Size(293, 41)
-        Me.EmailTextBox.TabIndex = 4
-        Me.EmailTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        '
-        'PasswordTextBox
-        '
-        Me.PasswordTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.PasswordTextBox.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.PasswordTextBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.PasswordTextBox.HintForeColor = System.Drawing.Color.Empty
-        Me.PasswordTextBox.HintText = ""
-        Me.PasswordTextBox.isPassword = True
-        Me.PasswordTextBox.LineFocusedColor = System.Drawing.Color.Blue
-        Me.PasswordTextBox.LineIdleColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(92, Byte), Integer))
-        Me.PasswordTextBox.LineMouseHoverColor = System.Drawing.Color.Blue
-        Me.PasswordTextBox.LineThickness = 3
-        Me.PasswordTextBox.Location = New System.Drawing.Point(429, 278)
-        Me.PasswordTextBox.Margin = New System.Windows.Forms.Padding(4)
-        Me.PasswordTextBox.Name = "PasswordTextBox"
-        Me.PasswordTextBox.Size = New System.Drawing.Size(293, 41)
-        Me.PasswordTextBox.TabIndex = 5
-        Me.PasswordTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        '
         'GunaSwitch1
         '
         Me.GunaSwitch1.BaseColor = System.Drawing.SystemColors.Control
@@ -155,7 +126,7 @@ Partial Class Login
         '
         Me.GunaLabel1.AutoSize = True
         Me.GunaLabel1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.GunaLabel1.Location = New System.Drawing.Point(476, 344)
+        Me.GunaLabel1.Location = New System.Drawing.Point(476, 341)
         Me.GunaLabel1.Name = "GunaLabel1"
         Me.GunaLabel1.Size = New System.Drawing.Size(89, 15)
         Me.GunaLabel1.TabIndex = 7
@@ -245,26 +216,6 @@ Partial Class Login
         Me.Panel1.Size = New System.Drawing.Size(903, 30)
         Me.Panel1.TabIndex = 16
         '
-        'BunifuCustomLabel2
-        '
-        Me.BunifuCustomLabel2.AutoSize = True
-        Me.BunifuCustomLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel2.Location = New System.Drawing.Point(430, 196)
-        Me.BunifuCustomLabel2.Name = "BunifuCustomLabel2"
-        Me.BunifuCustomLabel2.Size = New System.Drawing.Size(74, 16)
-        Me.BunifuCustomLabel2.TabIndex = 17
-        Me.BunifuCustomLabel2.Text = "UserName"
-        '
-        'BunifuCustomLabel3
-        '
-        Me.BunifuCustomLabel3.AutoSize = True
-        Me.BunifuCustomLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel3.Location = New System.Drawing.Point(429, 263)
-        Me.BunifuCustomLabel3.Name = "BunifuCustomLabel3"
-        Me.BunifuCustomLabel3.Size = New System.Drawing.Size(68, 16)
-        Me.BunifuCustomLabel3.TabIndex = 18
-        Me.BunifuCustomLabel3.Text = "Password"
-        '
         'GunaPictureBox2
         '
         Me.GunaPictureBox2.BaseColor = System.Drawing.Color.White
@@ -276,25 +227,51 @@ Partial Class Login
         Me.GunaPictureBox2.TabIndex = 1
         Me.GunaPictureBox2.TabStop = False
         '
-        'GunaPictureBox1
+        'EmailTextBox
         '
-        Me.GunaPictureBox1.BaseColor = System.Drawing.Color.White
-        Me.GunaPictureBox1.Image = CType(resources.GetObject("GunaPictureBox1.Image"), System.Drawing.Image)
-        Me.GunaPictureBox1.Location = New System.Drawing.Point(-18, -14)
-        Me.GunaPictureBox1.Name = "GunaPictureBox1"
-        Me.GunaPictureBox1.Size = New System.Drawing.Size(310, 493)
-        Me.GunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.GunaPictureBox1.TabIndex = 0
-        Me.GunaPictureBox1.TabStop = False
+        Me.EmailTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.EmailTextBox.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.EmailTextBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.EmailTextBox.HintForeColor = System.Drawing.Color.Empty
+        Me.EmailTextBox.HintText = "username"
+        Me.EmailTextBox.isPassword = False
+        Me.EmailTextBox.LineFocusedColor = System.Drawing.Color.Blue
+        Me.EmailTextBox.LineIdleColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.EmailTextBox.LineMouseHoverColor = System.Drawing.Color.Blue
+        Me.EmailTextBox.LineThickness = 3
+        Me.EmailTextBox.Location = New System.Drawing.Point(432, 206)
+        Me.EmailTextBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.EmailTextBox.Name = "EmailTextBox"
+        Me.EmailTextBox.Size = New System.Drawing.Size(293, 41)
+        Me.EmailTextBox.TabIndex = 4
+        Me.EmailTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
-        'Form1
+        'PasswordTextBox
+        '
+        Me.PasswordTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.PasswordTextBox.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.PasswordTextBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.PasswordTextBox.HintForeColor = System.Drawing.Color.Empty
+        Me.PasswordTextBox.HintText = "Password"
+        Me.PasswordTextBox.isPassword = True
+        Me.PasswordTextBox.LineFocusedColor = System.Drawing.Color.Blue
+        Me.PasswordTextBox.LineIdleColor = System.Drawing.Color.Gray
+        Me.PasswordTextBox.LineMouseHoverColor = System.Drawing.Color.Blue
+        Me.PasswordTextBox.LineThickness = 3
+        Me.PasswordTextBox.Location = New System.Drawing.Point(432, 266)
+        Me.PasswordTextBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.PasswordTextBox.Name = "PasswordTextBox"
+        Me.PasswordTextBox.Size = New System.Drawing.Size(293, 44)
+        Me.PasswordTextBox.TabIndex = 18
+        Me.PasswordTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        '
+        'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ClientSize = New System.Drawing.Size(903, 468)
-        Me.Controls.Add(Me.BunifuCustomLabel3)
-        Me.Controls.Add(Me.BunifuCustomLabel2)
+        Me.Controls.Add(Me.PasswordTextBox)
         Me.Controls.Add(Me.GunaControlBox2)
         Me.Controls.Add(Me.GunaControlBox1)
         Me.Controls.Add(Me.GunaSeparator2)
@@ -306,18 +283,17 @@ Partial Class Login
         Me.Controls.Add(Me.GunaLabel1)
         Me.Controls.Add(Me.GunaSwitch1)
         Me.Controls.Add(Me.EmailTextBox)
-        Me.Controls.Add(Me.PasswordTextBox)
         Me.Controls.Add(Me.GunaButton1)
         Me.Controls.Add(Me.GunaPanel1)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Form1"
+        Me.Name = "Login"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
         Me.GunaPanel1.ResumeLayout(False)
         Me.GunaPanel1.PerformLayout()
-        CType(Me.GunaPictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GunaPictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GunaPictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -328,8 +304,6 @@ Partial Class Login
     Friend WithEvents GunaPictureBox2 As Guna.UI.WinForms.GunaPictureBox
     Friend WithEvents GunaLabel1 As Guna.UI.WinForms.GunaLabel
     Friend WithEvents GunaSwitch1 As Guna.UI.WinForms.GunaSwitch
-    Friend WithEvents PasswordTextBox As ns1.BunifuMaterialTextbox
-    Friend WithEvents EmailTextBox As ns1.BunifuMaterialTextbox
     Friend WithEvents GunaButton1 As Guna.UI.WinForms.GunaButton
     Friend WithEvents BunifuCustomLabel1 As ns1.BunifuCustomLabel
     Friend WithEvents GunaVSeparator1 As Guna.UI.WinForms.GunaVSeparator
@@ -339,8 +313,8 @@ Partial Class Login
     Friend WithEvents GunaControlBox2 As Guna.UI.WinForms.GunaControlBox
     Friend WithEvents GunaControlBox1 As Guna.UI.WinForms.GunaControlBox
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents BunifuCustomLabel3 As ns1.BunifuCustomLabel
-    Friend WithEvents BunifuCustomLabel2 As ns1.BunifuCustomLabel
     Friend WithEvents GunaLabel2 As Guna.UI.WinForms.GunaLabel
+    Friend WithEvents EmailTextBox As ns1.BunifuMaterialTextbox
+    Friend WithEvents PasswordTextBox As ns1.BunifuMaterialTextbox
 
 End Class

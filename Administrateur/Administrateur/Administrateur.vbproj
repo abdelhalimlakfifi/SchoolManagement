@@ -78,6 +78,30 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbsencesForm.Designer.vb">
+      <DependentUpon>AbsencesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AbsencesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForms.Designer.vb">
+      <DependentUpon>AdminForms.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForms.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes.Designer.vb">
+      <DependentUpon>Classes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Classes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gradeForm.Designer.vb">
+      <DependentUpon>gradeForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="gradeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Home.Designer.vb">
       <DependentUpon>Home.vb</DependentUpon>
     </Compile>
@@ -96,10 +120,10 @@
     <Compile Include="Branches.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Classes.Designer.vb">
-      <DependentUpon>Classes.vb</DependentUpon>
+    <Compile Include="Course_branches.Designer.vb">
+      <DependentUpon>Course_branches.vb</DependentUpon>
     </Compile>
-    <Compile Include="Classes.vb">
+    <Compile Include="Course_branches.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Dashboard.Designer.vb">
@@ -115,12 +139,6 @@
       <DependentUpon>Login.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Historique.Designer.vb">
-      <DependentUpon>Historique.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Historique.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="IPServerForm.Designer.vb">
       <DependentUpon>IPServerForm.vb</DependentUpon>
     </Compile>
@@ -131,6 +149,12 @@
       <DependentUpon>Loading.vb</DependentUpon>
     </Compile>
     <Compile Include="Loading.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules.Designer.vb">
+      <DependentUpon>Modules.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -148,17 +172,29 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="pdo.vb" />
-    <Compile Include="ProfAdd.Designer.vb">
-      <DependentUpon>ProfAdd.vb</DependentUpon>
+    <Compile Include="New Class.Designer.vb">
+      <DependentUpon>New Class.vb</DependentUpon>
     </Compile>
-    <Compile Include="ProfAdd.vb">
+    <Compile Include="New Class.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StdAdd.Designer.vb">
-      <DependentUpon>StdAdd.vb</DependentUpon>
+    <Compile Include="PaymentForm.Designer.vb">
+      <DependentUpon>PaymentForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="StdAdd.vb">
+    <Compile Include="PaymentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentHistorique.Designer.vb">
+      <DependentUpon>PaymentHistorique.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentHistorique.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pdo.vb" />
+    <Compile Include="PopUp.Designer.vb">
+      <DependentUpon>PopUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopUp.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Students.Designer.vb">
@@ -167,8 +203,26 @@
     <Compile Include="Students.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TechersForms.Designer.vb">
+      <DependentUpon>TechersForms.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TechersForms.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AbsencesForm.resx">
+      <DependentUpon>AbsencesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForms.resx">
+      <DependentUpon>AdminForms.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes.resx">
+      <DependentUpon>Classes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gradeForm.resx">
+      <DependentUpon>gradeForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.vb</DependentUpon>
     </EmbeddedResource>
@@ -178,8 +232,8 @@
     <EmbeddedResource Include="Branches.resx">
       <DependentUpon>Branches.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Classes.resx">
-      <DependentUpon>Classes.vb</DependentUpon>
+    <EmbeddedResource Include="Course_branches.resx">
+      <DependentUpon>Course_branches.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.vb</DependentUpon>
@@ -187,14 +241,14 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Historique.resx">
-      <DependentUpon>Historique.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="IPServerForm.resx">
       <DependentUpon>IPServerForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Loading.resx">
       <DependentUpon>Loading.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules.resx">
+      <DependentUpon>Modules.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -202,14 +256,23 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProfAdd.resx">
-      <DependentUpon>ProfAdd.vb</DependentUpon>
+    <EmbeddedResource Include="New Class.resx">
+      <DependentUpon>New Class.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StdAdd.resx">
-      <DependentUpon>StdAdd.vb</DependentUpon>
+    <EmbeddedResource Include="PaymentForm.resx">
+      <DependentUpon>PaymentForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentHistorique.resx">
+      <DependentUpon>PaymentHistorique.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUp.resx">
+      <DependentUpon>PopUp.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Students.resx">
       <DependentUpon>Students.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TechersForms.resx">
+      <DependentUpon>TechersForms.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
