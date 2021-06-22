@@ -12,8 +12,11 @@ Public Class Login
             Dim cmd As New SqlCommand("SELECT count(*) FROM ETUDIANT WHERE SURNOM='" & UsernameTextbox.Text & "' AND MOTS_DE_PASSE=HASHBYTES('SHA1','" & PasswordTextbox.Text & "')", connection)
             Dim count As Integer = Convert.ToInt16(cmd.ExecuteScalar)
             If count > 0 Then
-                cmd = New SqlCommand("SELECT count(*) FROM ETUDIANT WHERE SURNOM='" & UsernameTextbox.Text & "' AND MOTS_DE_PASSE=HASHBYTES('SHA1','" & PasswordTextbox.Text & "')", connection)
+                cmd = New SqlCommand("SELECT ID_ETUDIANT FROM ETUDIANT WHERE SURNOM='" & UsernameTextbox.Text & "' AND MOTS_DE_PASSE=HASHBYTES('SHA1','" & PasswordTextbox.Text & "')", connection)
                 pdo.student_Id = Convert.ToInt16(cmd.ExecuteScalar)
+                cmd = New SqlCommand("SELECT PHOTOS FROM ETUDIANT WHERE SURNOM='" & UsernameTextbox.Text & "' AND MOTS_DE_PASSE=HASHBYTES('SHA1','" & PasswordTextbox.Text & "')", connection)
+                pdo.path = System.IO.Path.ChangeExtension(cmd.ExecuteScalar, Nothing)
+
                 Form2.Show()
                 Me.Hide()
             Else

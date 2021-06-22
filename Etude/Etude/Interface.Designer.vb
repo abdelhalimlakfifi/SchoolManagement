@@ -31,6 +31,8 @@ Partial Class Form2
         Me.GunaPanel1 = New Guna.UI.WinForms.GunaPanel()
         Me.GunaElipse1 = New Guna.UI.WinForms.GunaElipse(Me.components)
         Me.GunaPanel2 = New Guna.UI.WinForms.GunaPanel()
+        Me.GunaControlBox1 = New Guna.UI.WinForms.GunaControlBox()
+        Me.GunaControlBox2 = New Guna.UI.WinForms.GunaControlBox()
         CType(Me.GunaPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GunaPanel1.SuspendLayout()
         Me.SuspendLayout()
@@ -49,7 +51,7 @@ Partial Class Form2
         Me.GunaButton2.Image = CType(resources.GetObject("GunaButton2.Image"), System.Drawing.Image)
         Me.GunaButton2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right
         Me.GunaButton2.ImageSize = New System.Drawing.Size(20, 20)
-        Me.GunaButton2.Location = New System.Drawing.Point(3, 182)
+        Me.GunaButton2.Location = New System.Drawing.Point(124, 137)
         Me.GunaButton2.Name = "GunaButton2"
         Me.GunaButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(151, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GunaButton2.OnHoverBorderColor = System.Drawing.Color.Black
@@ -75,7 +77,7 @@ Partial Class Form2
         Me.GunaButton1.Image = CType(resources.GetObject("GunaButton1.Image"), System.Drawing.Image)
         Me.GunaButton1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right
         Me.GunaButton1.ImageSize = New System.Drawing.Size(20, 20)
-        Me.GunaButton1.Location = New System.Drawing.Point(3, 279)
+        Me.GunaButton1.Location = New System.Drawing.Point(519, 137)
         Me.GunaButton1.Name = "GunaButton1"
         Me.GunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(151, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GunaButton1.OnHoverBorderColor = System.Drawing.Color.Black
@@ -93,7 +95,7 @@ Partial Class Form2
         Me.GunaLabel8.BackColor = System.Drawing.Color.Transparent
         Me.GunaLabel8.Font = New System.Drawing.Font("Segoe UI", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GunaLabel8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(92, Byte), Integer))
-        Me.GunaLabel8.Location = New System.Drawing.Point(74, 20)
+        Me.GunaLabel8.Location = New System.Drawing.Point(395, 47)
         Me.GunaLabel8.Name = "GunaLabel8"
         Me.GunaLabel8.Size = New System.Drawing.Size(201, 47)
         Me.GunaLabel8.TabIndex = 26
@@ -104,7 +106,7 @@ Partial Class Form2
         Me.GunaPictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.GunaPictureBox1.BaseColor = System.Drawing.Color.White
         Me.GunaPictureBox1.Image = CType(resources.GetObject("GunaPictureBox1.Image"), System.Drawing.Image)
-        Me.GunaPictureBox1.Location = New System.Drawing.Point(-20, -16)
+        Me.GunaPictureBox1.Location = New System.Drawing.Point(301, 11)
         Me.GunaPictureBox1.Name = "GunaPictureBox1"
         Me.GunaPictureBox1.Size = New System.Drawing.Size(120, 120)
         Me.GunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -113,13 +115,16 @@ Partial Class Form2
         '
         'GunaPanel1
         '
+        Me.GunaPanel1.BackColor = System.Drawing.Color.MistyRose
+        Me.GunaPanel1.Controls.Add(Me.GunaControlBox2)
+        Me.GunaPanel1.Controls.Add(Me.GunaControlBox1)
         Me.GunaPanel1.Controls.Add(Me.GunaLabel8)
         Me.GunaPanel1.Controls.Add(Me.GunaButton1)
         Me.GunaPanel1.Controls.Add(Me.GunaButton2)
         Me.GunaPanel1.Controls.Add(Me.GunaPictureBox1)
         Me.GunaPanel1.Location = New System.Drawing.Point(-2, 1)
         Me.GunaPanel1.Name = "GunaPanel1"
-        Me.GunaPanel1.Size = New System.Drawing.Size(274, 552)
+        Me.GunaPanel1.Size = New System.Drawing.Size(856, 204)
         Me.GunaPanel1.TabIndex = 29
         '
         'GunaElipse1
@@ -128,10 +133,42 @@ Partial Class Form2
         '
         'GunaPanel2
         '
-        Me.GunaPanel2.Location = New System.Drawing.Point(271, 1)
+        Me.GunaPanel2.BackColor = System.Drawing.Color.MistyRose
+        Me.GunaPanel2.Location = New System.Drawing.Point(1, 203)
         Me.GunaPanel2.Name = "GunaPanel2"
-        Me.GunaPanel2.Size = New System.Drawing.Size(583, 552)
+        Me.GunaPanel2.Size = New System.Drawing.Size(853, 350)
         Me.GunaPanel2.TabIndex = 30
+        '
+        'GunaControlBox1
+        '
+        Me.GunaControlBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GunaControlBox1.AnimationHoverSpeed = 0.07!
+        Me.GunaControlBox1.AnimationSpeed = 0.03!
+        Me.GunaControlBox1.IconColor = System.Drawing.Color.Black
+        Me.GunaControlBox1.IconSize = 15.0!
+        Me.GunaControlBox1.Location = New System.Drawing.Point(828, 0)
+        Me.GunaControlBox1.Name = "GunaControlBox1"
+        Me.GunaControlBox1.OnHoverBackColor = System.Drawing.Color.FromArgb(CType(CType(103, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(183, Byte), Integer))
+        Me.GunaControlBox1.OnHoverIconColor = System.Drawing.Color.White
+        Me.GunaControlBox1.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaControlBox1.Size = New System.Drawing.Size(28, 23)
+        Me.GunaControlBox1.TabIndex = 29
+        '
+        'GunaControlBox2
+        '
+        Me.GunaControlBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GunaControlBox2.AnimationHoverSpeed = 0.07!
+        Me.GunaControlBox2.AnimationSpeed = 0.03!
+        Me.GunaControlBox2.ControlBoxType = Guna.UI.WinForms.FormControlBoxType.MinimizeBox
+        Me.GunaControlBox2.IconColor = System.Drawing.Color.Black
+        Me.GunaControlBox2.IconSize = 15.0!
+        Me.GunaControlBox2.Location = New System.Drawing.Point(779, 0)
+        Me.GunaControlBox2.Name = "GunaControlBox2"
+        Me.GunaControlBox2.OnHoverBackColor = System.Drawing.Color.FromArgb(CType(CType(103, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(183, Byte), Integer))
+        Me.GunaControlBox2.OnHoverIconColor = System.Drawing.Color.White
+        Me.GunaControlBox2.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaControlBox2.Size = New System.Drawing.Size(28, 23)
+        Me.GunaControlBox2.TabIndex = 30
         '
         'Form2
         '
@@ -156,4 +193,6 @@ Partial Class Form2
     Friend WithEvents GunaPanel1 As Guna.UI.WinForms.GunaPanel
     Friend WithEvents GunaElipse1 As Guna.UI.WinForms.GunaElipse
     Friend WithEvents GunaPanel2 As Guna.UI.WinForms.GunaPanel
+    Friend WithEvents GunaControlBox2 As Guna.UI.WinForms.GunaControlBox
+    Friend WithEvents GunaControlBox1 As Guna.UI.WinForms.GunaControlBox
 End Class
