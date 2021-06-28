@@ -50,6 +50,7 @@ Partial Class Students
         Me.GunaLabel3 = New Guna.UI.WinForms.GunaLabel()
         Me.GunaLabel2 = New Guna.UI.WinForms.GunaLabel()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.GunaButton4 = New Guna.UI.WinForms.GunaButton()
         Me.GunaPanel2.SuspendLayout()
         CType(Me.GunaPictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GunaPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -57,6 +58,7 @@ Partial Class Students
         '
         'GunaPanel2
         '
+        Me.GunaPanel2.Controls.Add(Me.GunaButton4)
         Me.GunaPanel2.Controls.Add(Me.GunaButton3)
         Me.GunaPanel2.Controls.Add(Me.GunaComboBox1)
         Me.GunaPanel2.Controls.Add(Me.GunaButton2)
@@ -121,7 +123,7 @@ Partial Class Students
         Me.GunaComboBox1.Font = New System.Drawing.Font("Segoe UI", 10.0!)
         Me.GunaComboBox1.ForeColor = System.Drawing.Color.Black
         Me.GunaComboBox1.FormattingEnabled = True
-        Me.GunaComboBox1.Location = New System.Drawing.Point(418, 300)
+        Me.GunaComboBox1.Location = New System.Drawing.Point(370, 300)
         Me.GunaComboBox1.Name = "GunaComboBox1"
         Me.GunaComboBox1.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GunaComboBox1.OnHoverItemForeColor = System.Drawing.Color.White
@@ -468,6 +470,29 @@ Partial Class Students
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
+        'GunaButton4
+        '
+        Me.GunaButton4.AnimationHoverSpeed = 0.07!
+        Me.GunaButton4.AnimationSpeed = 0.03!
+        Me.GunaButton4.BaseColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.GunaButton4.BorderColor = System.Drawing.Color.Black
+        Me.GunaButton4.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.GunaButton4.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaButton4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaButton4.ForeColor = System.Drawing.Color.White
+        Me.GunaButton4.Image = CType(resources.GetObject("GunaButton4.Image"), System.Drawing.Image)
+        Me.GunaButton4.ImageSize = New System.Drawing.Size(15, 15)
+        Me.GunaButton4.Location = New System.Drawing.Point(592, 298)
+        Me.GunaButton4.Name = "GunaButton4"
+        Me.GunaButton4.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(151, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.GunaButton4.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.GunaButton4.OnHoverForeColor = System.Drawing.Color.White
+        Me.GunaButton4.OnHoverImage = Nothing
+        Me.GunaButton4.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaButton4.Size = New System.Drawing.Size(36, 32)
+        Me.GunaButton4.TabIndex = 34
+        Me.GunaButton4.Text = "BROWSE"
+        '
         'Students
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -511,4 +536,5 @@ Partial Class Students
     Friend WithEvents GunaButton2 As Guna.UI.WinForms.GunaButton
     Friend WithEvents GunaComboBox1 As Guna.UI.WinForms.GunaComboBox
     Friend WithEvents GunaButton3 As Guna.UI.WinForms.GunaButton
+    Friend WithEvents GunaButton4 As Guna.UI.WinForms.GunaButton
 End Class

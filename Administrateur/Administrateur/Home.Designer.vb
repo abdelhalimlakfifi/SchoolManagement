@@ -25,6 +25,7 @@ Partial Class Home
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Home))
         Me.GunaPanel1 = New Guna.UI.WinForms.GunaPanel()
+        Me.GunaPictureBox1 = New Guna.UI.WinForms.GunaPictureBox()
         Me.GunaButton6 = New Guna.UI.WinForms.GunaButton()
         Me.GunaButton3 = New Guna.UI.WinForms.GunaButton()
         Me.GunaButton2 = New Guna.UI.WinForms.GunaButton()
@@ -44,10 +45,9 @@ Partial Class Home
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.GunaPictureBox1 = New Guna.UI.WinForms.GunaPictureBox()
         Me.GunaPanel1.SuspendLayout()
-        Me.Panel4.SuspendLayout()
         CType(Me.GunaPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel4.SuspendLayout()
         Me.SuspendLayout()
         '
         'GunaPanel1
@@ -67,6 +67,19 @@ Partial Class Home
         Me.GunaPanel1.Name = "GunaPanel1"
         Me.GunaPanel1.Size = New System.Drawing.Size(202, 608)
         Me.GunaPanel1.TabIndex = 14
+        '
+        'GunaPictureBox1
+        '
+        Me.GunaPictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.GunaPictureBox1.BaseColor = System.Drawing.Color.White
+        Me.GunaPictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaPictureBox1.Image = CType(resources.GetObject("GunaPictureBox1.Image"), System.Drawing.Image)
+        Me.GunaPictureBox1.Location = New System.Drawing.Point(11, 3)
+        Me.GunaPictureBox1.Name = "GunaPictureBox1"
+        Me.GunaPictureBox1.Size = New System.Drawing.Size(178, 153)
+        Me.GunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.GunaPictureBox1.TabIndex = 28
+        Me.GunaPictureBox1.TabStop = False
         '
         'GunaButton6
         '
@@ -447,19 +460,6 @@ Partial Class Home
         'Timer1
         '
         '
-        'GunaPictureBox1
-        '
-        Me.GunaPictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.GunaPictureBox1.BaseColor = System.Drawing.Color.White
-        Me.GunaPictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.GunaPictureBox1.Image = CType(resources.GetObject("GunaPictureBox1.Image"), System.Drawing.Image)
-        Me.GunaPictureBox1.Location = New System.Drawing.Point(11, 3)
-        Me.GunaPictureBox1.Name = "GunaPictureBox1"
-        Me.GunaPictureBox1.Size = New System.Drawing.Size(178, 153)
-        Me.GunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.GunaPictureBox1.TabIndex = 28
-        Me.GunaPictureBox1.TabStop = False
-        '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -475,8 +475,8 @@ Partial Class Home
         Me.Name = "Home"
         Me.Text = "Admin"
         Me.GunaPanel1.ResumeLayout(False)
-        Me.Panel4.ResumeLayout(False)
         CType(Me.GunaPictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel4.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub

@@ -122,4 +122,8 @@
     Private Sub GunaPictureBox1_Click(sender As Object, e As EventArgs) Handles GunaPictureBox1.Click
         switchPanel(Dashboard)
     End Sub
+
+    Private Sub GunaButton10_Click(sender As Object, e As EventArgs) Handles GunaButton10.Click
+        switchPanel(AboutUS)
+    End Sub
 End Class

@@ -66,7 +66,7 @@ Public Class Branches
                     MsgBox("Item deleted")
                 End If
             Catch ex As Exception
-                MsgBox("Can't Delete this item. Please verify the courses table... " & vbNewLine & ex.Message)
+                MsgBox("On peut pas suprimme ce filier car il admet des etudiants ou des class.")
             End Try
         End If
         cmd = New SqlCommand("SELECT * FROM FILIER", con)

@@ -4,6 +4,7 @@ Imports System.Data.SqlClient
 Imports System.Text
 Imports System.Net
 Imports System.Net.FtpWebRequest
+
 Public Class Students
     Private Function FtpFolderCreate(folder_name As String, username As String, password As String) As Boolean
         Dim request As Net.FtpWebRequest = CType(FtpWebRequest.Create(folder_name), FtpWebRequest)
@@ -87,6 +88,17 @@ Public Class Students
 
             FtpFolderCreate("ftp://" & pdo.ipServer & "/students/" & foldername & "/", "miage", "miage")
             My.Computer.Network.UploadFile(PicturePathTextbox.Text, "ftp://" & pdo.ipServer & "/" & "Administration/Student_Pictures/" & foldername & ".jpg", "miage", "miage", True, 500)
+            MessageBox.Show("Etudiant Enregistrer")
+            FirstNameTextBox.Text = ""
+            LastNameTextBox.Text = ""
+            AdressTextBox.Text = ""
+            PhoneTextBoxt.Text = ""
+            OtherPhoneTextBox.Text = ""
+            PicturePathTextbox.Text = ""
+            UsernameTextBox.Text = ""
+            PasswordTextBox.Text = ""
+            GunaPictureBox2.Image.Dispose()
+            GunaPictureBox2.Image = Nothing
         Catch ex As Exception
             MsgBox(ex.Message)
             MsgBox("Username already exist")
@@ -98,4 +110,17 @@ Public Class Students
     Private Sub GunaButton3_Click(sender As Object, e As EventArgs) Handles GunaButton3.Click
         PasswordTextBox.Text = RandomString()
     End Sub
+
+    Private Sub GunaButton4_Click(sender As Object, e As EventArgs) Handles GunaButton4.Click
+        Dim cmd As New SqlCommand("SELECT * FROM FILIER", con)
+        Dim adapter As New SqlDataAdapter(cmd)
+        Dim table As New DataTable()
+        adapter.Fill(table)
+        GunaComboBox1.DataSource = table
+        GunaComboBox1.DisplayMember = "NOM"
+        GunaComboBox1.ValueMember = "ID_FILIER"
+    End Sub
+
+   
+
 End Class
