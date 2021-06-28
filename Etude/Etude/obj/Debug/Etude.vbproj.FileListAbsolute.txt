@@ -85,3 +85,8 @@ C:\Users\Pitcho\Desktop\CodinSchool_Management\Etude\Etude\obj\Debug\Etude.Resou
 C:\Users\Pitcho\Desktop\CodinSchool_Management\Etude\Etude\obj\Debug\Etude.vbproj.GenerateResource.Cache
 C:\Users\Pitcho\Desktop\CodinSchool_Management\Etude\Etude\bin\Debug\Etude.pdb
 C:\Users\Pitcho\Desktop\CodinSchool_Management\Etude\Etude\bin\Debug\Etude.xml
+C:\Users\Tenk-i\Desktop\ProjetSchoolManagement\SchoolManagement\Etude\Etude\bin\Debug\Etude.exe.config
+C:\Users\Tenk-i\Desktop\ProjetSchoolManagement\SchoolManagement\Etude\Etude\obj\Debug\Etude.vbproj.ResolveComReference.cache
+C:\Users\Tenk-i\Desktop\ProjetSchoolManagement\SchoolManagement\Etude\Etude\obj\Debug\Etude.exe
+C:\Users\Tenk-i\Desktop\ProjetSchoolManagement\SchoolManagement\Etude\Etude\obj\Debug\Etude.xml
+C:\Users\Tenk-i\Desktop\ProjetSchoolManagement\SchoolManagement\Etude\Etude\obj\Debug\Etude.pdb

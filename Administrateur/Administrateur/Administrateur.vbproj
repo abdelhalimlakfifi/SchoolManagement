@@ -81,6 +81,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutUS.Designer.vb">
+      <DependentUpon>AboutUS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutUS.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="AbsencesForm.Designer.vb">
       <DependentUpon>AbsencesForm.vb</DependentUpon>
     </Compile>
@@ -214,6 +220,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AboutUS.resx">
+      <DependentUpon>AboutUS.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AbsencesForm.resx">
       <DependentUpon>AbsencesForm.vb</DependentUpon>
     </EmbeddedResource>
