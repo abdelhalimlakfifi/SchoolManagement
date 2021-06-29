@@ -15,7 +15,7 @@ Public Class New_Class
         If con.State = ConnectionState.Closed Then
             con.Open()
         End If
-        Dim cmd As New SqlCommand("INSERT INTO class (if_filier) VALUES(" & GunaComboBox1.SelectedValue & ")", con)
+        Dim cmd As New SqlCommand("INSERT INTO class (ID_FILIER) VALUES(" & GunaComboBox1.SelectedValue & ")", con)
         Try
             cmd.ExecuteScalar()
             Me.Hide()

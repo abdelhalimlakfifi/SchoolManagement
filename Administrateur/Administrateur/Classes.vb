@@ -49,7 +49,6 @@ Public Class Classes
         End Try
         If WithoutRadioButton.Checked = True Then
             cmd = New SqlCommand("SELECT NOM, PRENOM, ADRESSE, TELEPHONE, AUTRE_PHONE, SURNOM, ID_ETUDIANT,Id_class FROM ETUDIANT WHERE ID_FILIER=" & i & " AND Id_class IS NULL;", con)
-            MsgBox(i)
         Else
             cmd = New SqlCommand("SELECT NOM, PRENOM, ADRESSE, TELEPHONE, AUTRE_PHONE, SURNOM, ID_ETUDIANT,Id_class FROM ETUDIANT WHERE ID_FILIER=" & i & " ;", con)
 

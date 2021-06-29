@@ -89,8 +89,21 @@ Public Class PaymentForm
         Dim cmd As New SqlCommand("UPDATE ETUDIANT SET NOM='" & LastNameTextBox.Text & "', PRENOM='" & FirstNameTextBox.Text & "', ADRESSE='" & AdressTextBox.Text & "', TELEPHONE='" & PhoneTextBoxt.Text & "', AUTRE_PHONE='" & OtherPhoneTextBox.Text & "', SURNOM='" & UsernameTextBox.Text & "' WHERE ID_ETUDIANT=" & stdID & ";", con)
         Dim i As Integer = MsgBox("Are you sure you want to update ?", vbYesNo)
         If i > 0 Then
-            cmd.ExecuteScalar()
-            MsgBox("Item Updated")
+            Try
+                cmd.ExecuteScalar()
+                MsgBox("Item Updated")
+                stdID = Nothing
+                FirstNameTextBox.Text = ""
+                LastNameTextBox.Text = ""
+                AdressTextBox.Text = ""
+                PhoneTextBoxt.Text = ""
+                OtherPhoneTextBox.Text = ""
+                UsernameTextBox.Text = ""
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            End Try
+
+
         End If
         cmd = New SqlCommand("SELECT NOM, PRENOM, ADRESSE, TELEPHONE, AUTRE_PHONE, PHOTOS, SURNOM, ID_ETUDIANT, ID_ADMIN, ID_FILIER FROM ETUDIANT;", con)
         Dim adapter As New SqlDataAdapter(cmd)
@@ -104,12 +117,26 @@ Public Class PaymentForm
     End Sub
 
     Private Sub GunaButton4_Click(sender As Object, e As EventArgs) Handles GunaButton4.Click
+
         Dim cmd As New SqlCommand("DELETE FROM ETUDIANT WHERE ID_ETUDIANT=" & stdID & ";", con)
 
         Dim i As Integer = MsgBox("Are you sure you wanna delete " & stdName & "?", vbYesNo)
         If i > 0 Then
-            cmd.ExecuteScalar()
-            MsgBox("Item Deleted")
+            Try
+                cmd.ExecuteScalar()
+                MsgBox("Item Deleted")
+
+                FirstNameTextBox.Text = ""
+                LastNameTextBox.Text = ""
+                AdressTextBox.Text = ""
+                PhoneTextBoxt.Text = ""
+                OtherPhoneTextBox.Text = ""
+                UsernameTextBox.Text = ""
+                stdID = Nothing
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            End Try
+
         End If
         cmd = New SqlCommand("SELECT NOM, PRENOM, ADRESSE, TELEPHONE, AUTRE_PHONE, PHOTOS, SURNOM, ID_ETUDIANT, ID_ADMIN, ID_FILIER FROM ETUDIANT;", con)
         Dim adapter2 As New SqlDataAdapter(cmd)
@@ -132,12 +159,22 @@ Public Class PaymentForm
             Try
                 cmd.ExecuteScalar()
                 MsgBox("Payment Done")
+
             Catch ex As Exception
                 MessageBox.Show(ex.Message)
             End Try
+            stdID = Nothing
+            FirstNameTextBox.Text = ""
+            LastNameTextBox.Text = ""
+            AdressTextBox.Text = ""
+            PhoneTextBoxt.Text = ""
+            OtherPhoneTextBox.Text = ""
+            UsernameTextBox.Text = ""
+            amountTextBox.Text = ""
         Else
             MessageBox.Show("Please fill the Amount Field")
         End If
+
     End Sub
 
     Private Sub BunifuTextbox1_OnTextChange(sender As Object, e As EventArgs) Handles BunifuTextbox1.OnTextChange

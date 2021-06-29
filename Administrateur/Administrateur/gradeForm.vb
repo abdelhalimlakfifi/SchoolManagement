@@ -8,15 +8,15 @@ Public Class gradeForm
         If con.State = ConnectionState.Closed Then
             con.Open()
         End If
-        cmd = New SqlCommand("SELECT Id_class, if_filier FROM class", con)
+        cmd = New SqlCommand("SELECT id_class, ID_FILIER FROM class", con)
         Dim ap As New SqlDataAdapter(cmd)
         Dim tb As New DataTable()
         ap.Fill(tb)
         ClassComboBox1.DataSource = tb
         ClassComboBox1.DisplayMember = "Id_class"
-        ClassComboBox1.ValueMember = "if_filier"
+        ClassComboBox1.ValueMember = "ID_FILIER"
         ClassComboBox1.SelectedValue = -1
-        cmd = New SqlCommand("SELECT  NOM, PRENOM, SURNOM, Id_class, ID_ETUDIANT, ID_FILIER FROM ETUDIANT;", con)
+        cmd = New SqlCommand("SELECT  NOM, PRENOM, SURNOM, id_class, ID_ETUDIANT, ID_FILIER FROM ETUDIANT;", con)
         Dim adapter As New SqlDataAdapter(cmd)
         Dim table As New DataTable()
         adapter.Fill(table)

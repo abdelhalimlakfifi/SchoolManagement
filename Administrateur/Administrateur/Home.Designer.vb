@@ -102,7 +102,7 @@ Partial Class Home
         Me.GunaButton6.OnHoverImage = Nothing
         Me.GunaButton6.OnPressedColor = System.Drawing.Color.Black
         Me.GunaButton6.Radius = 24
-        Me.GunaButton6.Size = New System.Drawing.Size(193, 50)
+        Me.GunaButton6.Size = New System.Drawing.Size(187, 50)
         Me.GunaButton6.TabIndex = 27
         Me.GunaButton6.Text = "Administrateur"
         Me.GunaButton6.UseTransfarantBackground = True
@@ -128,7 +128,7 @@ Partial Class Home
         Me.GunaButton3.OnHoverImage = Nothing
         Me.GunaButton3.OnPressedColor = System.Drawing.Color.Black
         Me.GunaButton3.Radius = 24
-        Me.GunaButton3.Size = New System.Drawing.Size(193, 50)
+        Me.GunaButton3.Size = New System.Drawing.Size(190, 50)
         Me.GunaButton3.TabIndex = 26
         Me.GunaButton3.Text = "Les Classes"
         Me.GunaButton3.UseTransfarantBackground = True
@@ -154,7 +154,7 @@ Partial Class Home
         Me.GunaButton2.OnHoverImage = Nothing
         Me.GunaButton2.OnPressedColor = System.Drawing.Color.Black
         Me.GunaButton2.Radius = 24
-        Me.GunaButton2.Size = New System.Drawing.Size(160, 50)
+        Me.GunaButton2.Size = New System.Drawing.Size(193, 50)
         Me.GunaButton2.TabIndex = 25
         Me.GunaButton2.Text = "Etudiant"
         Me.GunaButton2.UseTransfarantBackground = True
@@ -206,7 +206,7 @@ Partial Class Home
         Me.GunaButton9.OnHoverImage = Nothing
         Me.GunaButton9.OnPressedColor = System.Drawing.Color.Black
         Me.GunaButton9.Radius = 24
-        Me.GunaButton9.Size = New System.Drawing.Size(193, 50)
+        Me.GunaButton9.Size = New System.Drawing.Size(187, 50)
         Me.GunaButton9.TabIndex = 22
         Me.GunaButton9.Text = "Courses & branches"
         Me.GunaButton9.UseTransfarantBackground = True
@@ -232,7 +232,7 @@ Partial Class Home
         Me.GunaButton8.OnHoverImage = Nothing
         Me.GunaButton8.OnPressedColor = System.Drawing.Color.Black
         Me.GunaButton8.Radius = 24
-        Me.GunaButton8.Size = New System.Drawing.Size(160, 50)
+        Me.GunaButton8.Size = New System.Drawing.Size(191, 50)
         Me.GunaButton8.TabIndex = 21
         Me.GunaButton8.Text = "Historique"
         Me.GunaButton8.UseTransfarantBackground = True
@@ -284,7 +284,7 @@ Partial Class Home
         Me.GunaButton13.OnHoverImage = Nothing
         Me.GunaButton13.OnPressedColor = System.Drawing.Color.Black
         Me.GunaButton13.Radius = 24
-        Me.GunaButton13.Size = New System.Drawing.Size(160, 50)
+        Me.GunaButton13.Size = New System.Drawing.Size(189, 50)
         Me.GunaButton13.TabIndex = 2
         Me.GunaButton13.Text = "Professeurs"
         Me.GunaButton13.UseTransfarantBackground = True

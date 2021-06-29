@@ -66,7 +66,12 @@ Public Class AbsencesForm
     End Sub
 
     Private Sub GunaComboBox1_SelectedValueChanged(sender As Object, e As EventArgs) Handles GunaComboBox1.SelectedValueChanged
-        IdProf = Val(GunaComboBox1.SelectedValue.ToString)
+        Try
+            IdProf = Val(GunaComboBox1.SelectedValue.ToString)
+        Catch ex As Exception
+
+        End Try
+
 
     End Sub
 
@@ -94,5 +99,15 @@ Public Class AbsencesForm
         Dim table2 As New DataTable
         adapter2.Fill(table2)
         BunifuCustomDataGrid1.DataSource = table2
+    End Sub
+
+    Private Sub GunaButton4_Click(sender As Object, e As EventArgs) Handles GunaButton4.Click
+        Dim cmd As New SqlCommand("SELECT * FROM PROF;", con)
+        Dim adapter As New SqlDataAdapter(cmd)
+        Dim table3 As New DataTable()
+        adapter.Fill(table3)
+        GunaComboBox1.DataSource = table3
+        GunaComboBox1.DisplayMember = "NOM"
+        GunaComboBox1.ValueMember = "ID_PROF"
     End Sub
 End Class

@@ -22,8 +22,8 @@ Partial Class AbsencesForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AbsencesForm))
         Me.BunifuCustomDataGrid1 = New ns1.BunifuCustomDataGrid()
         Me.GunaLabel12 = New Guna.UI.WinForms.GunaLabel()
@@ -40,25 +40,26 @@ Partial Class AbsencesForm
         Me.BunifuCustomLabel4 = New ns1.BunifuCustomLabel()
         Me.GunaTextBox2 = New Guna.UI.WinForms.GunaTextBox()
         Me.GunaButton2 = New Guna.UI.WinForms.GunaButton()
+        Me.GunaButton4 = New Guna.UI.WinForms.GunaButton()
         CType(Me.BunifuCustomDataGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GunaPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BunifuCustomDataGrid1
         '
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.BunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle3
         Me.BunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.BunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.BunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(92, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(92, Byte), Integer))
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.BunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.BunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.BunifuCustomDataGrid1.DoubleBuffered = True
         Me.BunifuCustomDataGrid1.EnableHeadersVisualStyles = False
@@ -161,7 +162,7 @@ Partial Class AbsencesForm
         Me.GunaComboBox1.Name = "GunaComboBox1"
         Me.GunaComboBox1.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GunaComboBox1.OnHoverItemForeColor = System.Drawing.Color.White
-        Me.GunaComboBox1.Size = New System.Drawing.Size(212, 26)
+        Me.GunaComboBox1.Size = New System.Drawing.Size(168, 26)
         Me.GunaComboBox1.TabIndex = 30
         '
         'BunifuCustomLabel1
@@ -273,11 +274,35 @@ Partial Class AbsencesForm
         Me.GunaButton2.TabIndex = 49
         Me.GunaButton2.Text = "Enregistrer l'absence"
         '
+        'GunaButton4
+        '
+        Me.GunaButton4.AnimationHoverSpeed = 0.07!
+        Me.GunaButton4.AnimationSpeed = 0.03!
+        Me.GunaButton4.BaseColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.GunaButton4.BorderColor = System.Drawing.Color.Black
+        Me.GunaButton4.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.GunaButton4.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaButton4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaButton4.ForeColor = System.Drawing.Color.White
+        Me.GunaButton4.Image = CType(resources.GetObject("GunaButton4.Image"), System.Drawing.Image)
+        Me.GunaButton4.ImageSize = New System.Drawing.Size(15, 15)
+        Me.GunaButton4.Location = New System.Drawing.Point(203, 224)
+        Me.GunaButton4.Name = "GunaButton4"
+        Me.GunaButton4.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(151, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.GunaButton4.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.GunaButton4.OnHoverForeColor = System.Drawing.Color.White
+        Me.GunaButton4.OnHoverImage = Nothing
+        Me.GunaButton4.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaButton4.Size = New System.Drawing.Size(36, 32)
+        Me.GunaButton4.TabIndex = 50
+        Me.GunaButton4.Text = "BROWSE"
+        '
         'AbsencesForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(934, 505)
+        Me.Controls.Add(Me.GunaButton4)
         Me.Controls.Add(Me.GunaButton2)
         Me.Controls.Add(Me.BunifuCustomLabel4)
         Me.Controls.Add(Me.GunaTextBox2)
@@ -317,4 +342,5 @@ Partial Class AbsencesForm
     Friend WithEvents BunifuCustomLabel4 As ns1.BunifuCustomLabel
     Friend WithEvents GunaTextBox2 As Guna.UI.WinForms.GunaTextBox
     Friend WithEvents GunaButton2 As Guna.UI.WinForms.GunaButton
+    Friend WithEvents GunaButton4 As Guna.UI.WinForms.GunaButton
 End Class

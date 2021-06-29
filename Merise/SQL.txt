@@ -1,0 +1,219 @@
+/*==============================================================*/
+/* Table : ABSENCE                                              */
+/*==============================================================*/
+create table ABSENCE (
+   ID_ABSENCE           int                  IDENTITY(1,1) not null,
+   ID_ETUDIANT          int                  not null,
+   DATE                 datetime             null,
+   constraint PK_ABSENCE primary key nonclustered  (ID_ABSENCE)
+)
+
+
+/*==============================================================*/
+/* Table : ADMINISTRATEUR                                       */
+/*==============================================================*/
+create table ADMINISTRATEUR (
+   ID_ADMIN             int                  IDENTITY(1,1) not null,
+   NOM                  varchar(255)           null,
+   PRENOM               varchar(255)           null,
+   NUM_TELEPHONE        varchar(30)           null,
+   EMAIL                varchar(255)           null,
+   SURNOM               varchar(255)           null,
+   PASSWORD             varchar(255)           null,
+   constraint PK_ADMINISTRATEUR primary key nonclustered (ID_ADMIN)
+)
+
+
+
+
+
+/*==============================================================*/
+/* Table : ENSEIGNEMENT                                         */
+/*==============================================================*/
+create table ENSEIGNEMENT (
+   ID_ENSE				int			primary key IDENTITY(1,1) not null,
+   ID_PROF              int                  not null,
+   ID_MODULE            int                  not null,
+   id_class				int					 null,
+  
+)
+
+
+/*==============================================================*/
+/* Table : ETUDIANT                                             */
+/*==============================================================*/
+create table ETUDIANT (
+   ID_ETUDIANT          int                  IDENTITY(1,1) not null,
+   ID_ADMIN             int                  not null,
+   ID_FILIER            int                  not null,
+   id_class				int					   null,
+   NOM                  varchar(255)           null,
+   PRENOM               varchar(255)           null,
+   ADRESSE              varchar(255)           null,
+   TELEPHONE            varchar(255)           null,
+   AUTRE_PHONE          varchar(255)           null,
+   PHOTOS               varchar(255)           null,
+   SURNOM               varchar(255)           null,
+   MOTS_DE_PASSE        varchar(255)           null,
+   constraint PK_ETUDIANT primary key nonclustered (ID_ETUDIANT)
+)
+
+
+/*==============================================================*/
+/* Table : FACTURE                                              */
+/*==============================================================*/
+create table FACTURE (
+   ID_FACTURE           int                  IDENTITY(1,1) not null,
+   ID_ETUDIANT          int                  not null,
+   ID_ADMIN             int                  not null,
+   MONTANT              int         null,
+   MOISPAYE             varchar(255)           null,
+   DATE                 datetime             null,
+   constraint PK_FACTURE primary key nonclustered  (ID_FACTURE)
+)
+
+
+/*==============================================================*/
+/* Table : FILIER                                               */
+/*==============================================================*/
+create table FILIER (
+   ID_FILIER            int                  IDENTITY(1,1) not null,
+   NOM                  varchar(255)           null,
+   SPECIALITE           varchar(255)           null,
+   constraint PK_FILIER primary key nonclustered  (ID_FILIER)
+)
+
+
+/*==============================================================*/
+/* Table : INTEGRATION                                          */
+/*==============================================================*/
+create table INTEGRATION (
+   ID_INTEGRATION		int					primary key IDENTITY(1,1) not null,
+   ID_FILIER            int                  not null,
+   ID_MODULE            int                  not null,
+)
+
+
+/*==============================================================*/
+/* Table : MODULE                                               */
+/*==============================================================*/
+create table MODULE (
+   ID_MODULE            int                 IDENTITY(1,1) not null,
+   MODULE               varchar(255)           null,
+   COEFFICIENT          int                  null,
+   constraint PK_MODULE primary key nonclustered (ID_MODULE)
+)
+
+
+/*==============================================================*/
+/* Table : NOTES                                                */
+/*==============================================================*/
+create table NOTES (
+   ID_NOTE              int                 IDENTITY(1,1) not null,
+   ID_MODULE            int                  not null,
+   ID_PROF              int                  not null,
+   ID_ETUDIANT          int                  not null,
+   LA_NOTE              int                  null,
+   REMARQUE             varchar(255)           null,
+   constraint PK_NOTES primary key nonclustered  (ID_NOTE)
+)
+
+
+/*==============================================================*/
+/* Table : PROF                                                 */
+/*==============================================================*/
+create table PROF (
+   ID_PROF              int                 IDENTITY(1,1) not null,
+   ID_ADMIN             int                  not null,
+   NOM                  varchar(255)           null,
+   PRENOM               varchar(255)           null,
+   NUM_TELEPHONE        varchar(255)           null,
+   SALAIRE              int         null,
+   CIN                  varchar(255)           null,
+   SURNOM               varchar(255)           null,
+   PASSWORD             varchar(255)           null,
+   constraint PK_PROF primary key nonclustered (ID_PROF)
+)
+
+create table class (
+	id_class int primary key IDENTITY(1,1) not null,
+	ID_FILIER int null
+)
+
+alter table INTEGRATION add foreign key (ID_FILIER) references FILIER(ID_FILIER) ON DELETE CASCADE
+
+alter table INTEGRATION add foreign key (ID_MODULE) references MODULE(ID_MODULE) ON DELETE CASCADE
+
+alter table ENSEIGNEMENT add foreign key (ID_PROF) references PROF(ID_PROF) ON DELETE CASCADE
+
+alter table ENSEIGNEMENT add foreign key (ID_MODULE) references MODULE(ID_MODULE) ON DELETE CASCADE
+
+alter table ENSEIGNEMENT add foreign key (id_class) references class(id_class) ON DELETE CASCADE
+
+alter table class add foreign key (ID_FILIER) references FILIER (ID_FILIER)
+
+alter table ETUDIANT add foreign key (id_class) references class(id_class)
+
+
+alter table ABSENCE
+   add constraint FK_ABSENCE_S_ABSENTE_ETUDIANT foreign key (ID_ETUDIANT)
+      references ETUDIANT (ID_ETUDIANT) ON DELETE CASCADE
+
+
+
+
+
+
+
+
+
+alter table ETUDIANT
+   add constraint FK_ETUDIANT_CHOIXFILL_FILIER foreign key (ID_FILIER)
+      references FILIER (ID_FILIER) ON DELETE NO ACTION 
+
+
+alter table ETUDIANT
+   add constraint FK_ETUDIANT_INSCRIPTI_ADMINIST foreign key (ID_ADMIN)
+      references ADMINISTRATEUR (ID_ADMIN) ON DELETE NO ACTION 
+
+
+alter table FACTURE
+   add constraint FK_FACTURE_EFFECTUER_ADMINIST foreign key (ID_ADMIN)
+      references ADMINISTRATEUR (ID_ADMIN) ON DELETE NO ACTION 
+
+
+alter table FACTURE
+   add constraint FK_FACTURE_PAIMENT_ETUDIANT foreign key (ID_ETUDIANT)
+      references ETUDIANT (ID_ETUDIANT) ON DELETE CASCADE
+
+
+
+
+
+alter table NOTES
+   add constraint FK_NOTES_NOTE_MODULE foreign key (ID_MODULE)
+      references MODULE (ID_MODULE) ON DELETE NO ACTION 
+
+
+alter table NOTES
+   add constraint FK_NOTES_NOTEDONNE_PROF foreign key (ID_PROF)
+      references PROF (ID_PROF) ON DELETE NO ACTION 
+
+
+alter table NOTES
+   add constraint FK_NOTES_NOTEPRIS_ETUDIANT foreign key (ID_ETUDIANT)
+      references ETUDIANT (ID_ETUDIANT) ON DELETE CASCADE
+
+
+alter table PROF
+   add constraint FK_PROF_AJOUT_PRO_ADMINIST foreign key (ID_ADMIN)
+      references ADMINISTRATEUR (ID_ADMIN) ON DELETE NO ACTION 
+      
+alter table ABSENCE ADD ID_PROF int
+
+
+ INSERT INTO miage.dbo.ADMINISTRATEUR
+(NOM, PRENOM, NUM_TELEPHONE, EMAIL, SURNOM, PASSWORD)
+VALUES('admin', 'admin', '06xxxxxx', 'admin@admin.com', 'admin', HASHBYTES('SHA1','admin'));
+
+ 

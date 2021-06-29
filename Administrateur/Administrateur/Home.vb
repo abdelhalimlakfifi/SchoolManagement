@@ -10,7 +10,14 @@
         panel.Show()
     End Sub
 
-
+    Sub clean()
+        GunaButton13.BaseColor = System.Drawing.Color.FromArgb(2, 27, 92)
+        GunaButton8.BaseColor = System.Drawing.Color.FromArgb(2, 27, 92)
+        GunaButton3.BaseColor = System.Drawing.Color.FromArgb(2, 27, 92)
+        GunaButton9.BaseColor = System.Drawing.Color.FromArgb(2, 27, 92)
+        GunaButton6.BaseColor = System.Drawing.Color.FromArgb(2, 27, 92)
+        GunaButton10.BaseColor = System.Drawing.Color.FromArgb(2, 27, 92)
+    End Sub
     Private Sub GunaPanel1_Paint(sender As Object, e As PaintEventArgs) Handles GunaPanel1.Paint
 
     End Sub
@@ -78,6 +85,8 @@
     End Sub
 
     Private Sub GunaButton13_Click(sender As Object, e As EventArgs) Handles GunaButton13.Click
+        clean()
+        GunaButton13.BaseColor = Color.Gold
         switchPanel(TechersForms)
     End Sub
 
@@ -101,13 +110,19 @@
     End Sub
 
     Private Sub GunaButton9_Click(sender As Object, e As EventArgs) Handles GunaButton9.Click
+        clean()
+        GunaButton9.BaseColor = Color.Gold
         switchPanel(Course_branches)
     End Sub
     Private Sub GunaButton8_Click(sender As Object, e As EventArgs) Handles GunaButton8.Click
+        clean()
+        GunaButton8.BaseColor = Color.Gold
         switchPanel(PaymentHistorique)
     End Sub
 
     Private Sub GunaButton3_Click(sender As Object, e As EventArgs) Handles GunaButton3.Click
+        clean()
+        GunaButton3.BaseColor = Color.Gold
         switchPanel(Classes)
     End Sub
 
@@ -116,6 +131,8 @@
     End Sub
 
     Private Sub GunaButton6_Click(sender As Object, e As EventArgs) Handles GunaButton6.Click
+        clean()
+        GunaButton6.BaseColor = Color.Gold
         switchPanel(AdminForms)
     End Sub
 
@@ -124,6 +141,12 @@
     End Sub
 
     Private Sub GunaButton10_Click(sender As Object, e As EventArgs) Handles GunaButton10.Click
+        clean()
+        GunaButton10.BaseColor = Color.Gold
         switchPanel(AboutUS)
+    End Sub
+
+    Private Sub GunaButton1_Click(sender As Object, e As EventArgs) Handles GunaButton1.Click
+        Application.Restart()
     End Sub
 End Class
