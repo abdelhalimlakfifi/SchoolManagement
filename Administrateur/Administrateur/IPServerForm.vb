@@ -13,10 +13,10 @@ Public Class IPServerForm
                     StreamWriter.WriteLine(BunifuTextbox1.text)
                 End Using
                 BunifuSwitch1.Value = True
-                Dim i As Integer = MsgBox("SVP redemarrer l'application pour l'utiliser", vbYes)
-                If i > 0 Then
-                    Application.Restart()
-                End If
+                Dim i As Integer = MsgBox("Connected" & vbNewLine & " SVP redemarrer l'application pour l'utiliser", vbYes)
+
+                Application.Restart()
+
             Catch ex As Exception
                 MsgBox("Please check the IP adress")
             End Try

@@ -24,4 +24,8 @@
         GunaPanel2.Controls.Add(fileManager)
         fileManager.Show()
     End Sub
+
+    Private Sub GunaButton3_Click(sender As Object, e As EventArgs) Handles GunaButton3.Click
+        Application.Restart()
+    End Sub
 End Class

@@ -90,3 +90,8 @@ C:\Users\Tenk-i\Desktop\ProjetSchoolManagement\SchoolManagement\Etude\Etude\obj\
 C:\Users\Tenk-i\Desktop\ProjetSchoolManagement\SchoolManagement\Etude\Etude\obj\Debug\Etude.exe
 C:\Users\Tenk-i\Desktop\ProjetSchoolManagement\SchoolManagement\Etude\Etude\obj\Debug\Etude.xml
 C:\Users\Tenk-i\Desktop\ProjetSchoolManagement\SchoolManagement\Etude\Etude\obj\Debug\Etude.pdb
+C:\Users\Pitcho\Desktop\CodinSchool\Etude\Etude\bin\Debug\Etude.exe.config
+C:\Users\Pitcho\Desktop\CodinSchool\Etude\Etude\obj\Debug\Etude.vbproj.ResolveComReference.cache
+C:\Users\Pitcho\Desktop\CodinSchool\Etude\Etude\obj\Debug\Etude.exe
+C:\Users\Pitcho\Desktop\CodinSchool\Etude\Etude\obj\Debug\Etude.xml
+C:\Users\Pitcho\Desktop\CodinSchool\Etude\Etude\obj\Debug\Etude.pdb
