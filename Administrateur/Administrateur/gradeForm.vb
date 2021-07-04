@@ -70,6 +70,9 @@ Public Class gradeForm
     End Sub
 
     Private Sub GunaButton3_Click(sender As Object, e As EventArgs) Handles GunaButton3.Click
+        If con.State = ConnectionState.Closed Then
+            con.Open()
+        End If
         If remarqueTextbox1.Text <> "" And gradesTextBox.Text <> "" Then
             cmd = New SqlCommand("INSERT INTO NOTES(ID_MODULE, ID_ETUDIANT, LA_NOTE, REMARQUE) VALUES(" & GunaComboBox2.SelectedValue & "," & studentId & "," & Val(gradesTextBox.Text) & ",'" & remarqueTextbox1.Text & "')", con)
             Try

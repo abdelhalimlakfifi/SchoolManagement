@@ -8,6 +8,9 @@ Public Class Modules
     Public courseName As String
     Public coeffition As Integer
     Public Sub fill()
+        If con.State = ConnectionState.Closed Then
+            con.Open()
+        End If
         cmd = New SqlCommand("SELECT * FROM Module", con)
         Dim adapter As New SqlDataAdapter(cmd)
         Dim table As New DataTable()

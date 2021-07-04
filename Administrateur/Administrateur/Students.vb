@@ -100,7 +100,7 @@ Public Class Students
             GunaPictureBox2.Image.Dispose()
             GunaPictureBox2.Image = Nothing
         Catch ex As Exception
-            MsgBox(ex.Message)
+            ' MsgBox(ex.Message)
             MsgBox("Username already exist")
         End Try
         
@@ -112,6 +112,9 @@ Public Class Students
     End Sub
 
     Private Sub GunaButton4_Click(sender As Object, e As EventArgs) Handles GunaButton4.Click
+        If con.State = ConnectionState.Closed Then
+            con.Open()
+        End If
         Dim cmd As New SqlCommand("SELECT * FROM FILIER", con)
         Dim adapter As New SqlDataAdapter(cmd)
         Dim table As New DataTable()

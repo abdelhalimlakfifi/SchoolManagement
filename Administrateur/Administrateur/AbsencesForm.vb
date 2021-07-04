@@ -29,6 +29,7 @@ Public Class AbsencesForm
         GunaComboBox1.DisplayMember = "NOM"
         GunaComboBox1.ValueMember = "ID_PROF"
         'GunaComboBox1.SelectedIndex = -1
+        con.Close()
     End Sub
 
     Private Sub BunifuCustomDataGrid1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles BunifuCustomDataGrid1.CellClick
@@ -42,6 +43,9 @@ Public Class AbsencesForm
     End Sub
 
     Private Sub GunaButton1_Click(sender As Object, e As EventArgs) Handles GunaButton1.Click
+        If con.State = ConnectionState.Closed Then
+            con.Open()
+        End If
         Dim cmd2 As New SqlCommand("SELECT NOM, PRENOM, ADRESSE, TELEPHONE, AUTRE_PHONE, PHOTOS, SURNOM, ID_ETUDIANT, ID_ADMIN, ID_FILIER FROM ETUDIANT;", con)
         Dim adapter2 As New SqlDataAdapter(cmd2)
         Dim table2 As New DataTable
@@ -50,6 +54,9 @@ Public Class AbsencesForm
     End Sub
 
     Private Sub GunaButton2_Click(sender As Object, e As EventArgs) Handles GunaButton2.Click
+        If con.State = ConnectionState.Closed Then
+            con.Open()
+        End If
         Dim cmd As New SqlCommand("INSERT INTO ABSENCE(ID_ETUDIANT, [DATE], ID_PROF) VALUES(" & stdId & ", '" & BunifuDatepicker1.Value & "', " & IdProf & ");", con)
         Try
             cmd.ExecuteScalar()
@@ -57,7 +64,7 @@ Public Class AbsencesForm
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try
-
+        con.Close()
 
     End Sub
 
@@ -102,6 +109,9 @@ Public Class AbsencesForm
     End Sub
 
     Private Sub GunaButton4_Click(sender As Object, e As EventArgs) Handles GunaButton4.Click
+        If con.State = ConnectionState.Closed Then
+            con.Open()
+        End If
         Dim cmd As New SqlCommand("SELECT * FROM PROF;", con)
         Dim adapter As New SqlDataAdapter(cmd)
         Dim table3 As New DataTable()

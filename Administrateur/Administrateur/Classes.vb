@@ -6,6 +6,9 @@ Public Class Classes
     Dim i As Integer
     Dim idClass As Integer
     Public Sub refresh()
+        If con.State = ConnectionState.Closed Then
+            con.Open()
+        End If
         cmd = New SqlCommand("SELECT * FROM class", con)
         Dim adapter As New SqlDataAdapter(cmd)
         Dim table As New DataTable()
@@ -19,6 +22,8 @@ Public Class Classes
         If con.State = ConnectionState.Closed Then
             con.Open()
         End If
+        
+
         cmd = New SqlCommand("SELECT * FROM class", con)
         Dim adapter As New SqlDataAdapter(cmd)
         Dim table As New DataTable()
@@ -39,7 +44,10 @@ Public Class Classes
     End Sub
 
     Private Sub GunaComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles GunaComboBox1.SelectedIndexChanged
-        cmd = New SqlCommand("SELECT if_filier FROM class WHERE Id_class=" & GunaComboBox1.Text, con)
+        If con.State = ConnectionState.Closed Then
+            con.Open()
+        End If
+        cmd = New SqlCommand("SELECT ID_FILIER FROM class WHERE Id_class=" & GunaComboBox1.Text, con)
         Try
             i = cmd.ExecuteScalar
             cmd = New SqlCommand("SELECT NOM FROM FILIER WHERE ID_FILIER=" & i, con)
@@ -69,6 +77,9 @@ Public Class Classes
     End Sub
 
     Private Sub GunaButton1_Click(sender As Object, e As EventArgs) Handles GunaButton1.Click
+        If con.State = ConnectionState.Closed Then
+            con.Open()
+        End If
         cmd = New SqlCommand("SELECT * FROM class", con)
         Dim adapter As New SqlDataAdapter(cmd)
         Dim table As New DataTable()
@@ -122,8 +133,12 @@ Public Class Classes
     End Sub
 
     Private Sub WithRadioButton_CheckedChanged(sender As Object, e As EventArgs) Handles WithRadioButton.CheckedChanged
+
         If WithRadioButton.Checked Then
-            Dim cmd2 As New SqlCommand("SELECT NOM, PRENOM, ADRESSE, TELEPHONE, AUTRE_PHONE, SURNOM, ID_ETUDIANT,Id_class FROM ETUDIANT WHERE ID_FILIER=" & i & ";", con)
+            If con.State = ConnectionState.Closed Then
+                con.Open()
+            End If
+            Dim cmd2 As New SqlCommand("SELECT NOM, PRENOM, ADRESSE, TELEPHONE, AUTRE_PHONE, SURNOM, ID_ETUDIANT,Id_class FROM ETUDIANT ;", con)
             Dim adapter2 As New SqlDataAdapter(cmd2)
             Dim table2 As New DataTable
             adapter2.Fill(table2)
@@ -137,6 +152,9 @@ Public Class Classes
 
     Private Sub WithoutRadioButton_CheckedChanged(sender As Object, e As EventArgs) Handles WithoutRadioButton.CheckedChanged
         If WithoutRadioButton.Checked = True Then
+            If con.State = ConnectionState.Closed Then
+                con.Open()
+            End If
             Dim cmd2 As New SqlCommand("SELECT NOM, PRENOM, ADRESSE, TELEPHONE, AUTRE_PHONE, SURNOM, ID_ETUDIANT,Id_class FROM ETUDIANT WHERE Id_class IS NULL;", con)
             Dim adapter2 As New SqlDataAdapter(cmd2)
             Dim table2 As New DataTable
@@ -147,6 +165,10 @@ Public Class Classes
     End Sub
 
     Private Sub GunaDataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles GunaDataGridView1.CellContentClick
+
+    End Sub
+
+    Private Sub GunaComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs)
 
     End Sub
 End Class

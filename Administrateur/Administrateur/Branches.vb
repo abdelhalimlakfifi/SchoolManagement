@@ -79,6 +79,9 @@ Public Class Branches
     End Sub
 
     Private Sub GunaButton1_Click(sender As Object, e As EventArgs) Handles GunaButton1.Click
+        If con.State = ConnectionState.Closed Then
+            con.Open()
+        End If
         Dim cmd As New SqlCommand("SELECT * FROM FILIER", con)
         Dim adapter As New SqlDataAdapter(cmd)
         Dim table As New DataTable()

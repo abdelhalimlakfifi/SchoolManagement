@@ -14,6 +14,9 @@ Public Class TechersForms
         Return sb.ToString()
     End Function
     Private Sub TechersForms_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If con.State = ConnectionState.Closed Then
+            con.Open()
+        End If
         Dim cmd As New SqlCommand("SELECT NOM, PRENOM, NUM_TELEPHONE, SALAIRE, CIN, SURNOM, ID_PROF, ID_ADMIN FROM PROF;", con)
         Dim adapter As New SqlDataAdapter(cmd)
         Dim table As New DataTable
@@ -41,6 +44,9 @@ Public Class TechersForms
     End Sub
 
     Private Sub GunaButton4_Click(sender As Object, e As EventArgs) Handles GunaButton4.Click
+        If con.State = ConnectionState.Closed Then
+            con.Open()
+        End If
         Dim cmd As New SqlCommand
         Dim i As Integer = MsgBox("Are you sure want to delete this teacher ?", vbYes)
         If i > 0 Then
@@ -102,6 +108,9 @@ Public Class TechersForms
     End Sub
 
     Private Sub GunaButton5_Click(sender As Object, e As EventArgs) Handles GunaButton5.Click
+        If con.State = ConnectionState.Closed Then
+            con.Open()
+        End If
         Dim cmd As New SqlCommand("SELECT NOM, PRENOM, NUM_TELEPHONE, SALAIRE, CIN, SURNOM, ID_PROF, ID_ADMIN FROM PROF;", con)
         Dim adapter As New SqlDataAdapter(cmd)
         Dim table As New DataTable
@@ -110,6 +119,9 @@ Public Class TechersForms
     End Sub
 
     Private Sub BunifuTextbox1_OnTextChange(sender As Object, e As EventArgs) Handles BunifuTextbox1.OnTextChange
+        If con.State = ConnectionState.Closed Then
+            con.Open()
+        End If
         Dim cmd As New SqlCommand("SELECT NOM, PRENOM, NUM_TELEPHONE, SALAIRE, CIN, SURNOM, ID_PROF, ID_ADMIN FROM PROF WHERE NOM LIKE '%" & BunifuTextbox1.text & "%' OR PRENOM LIKE '%" & BunifuTextbox1.text & "%';", con)
         Dim adapter As New SqlDataAdapter(cmd)
         Dim table As New DataTable

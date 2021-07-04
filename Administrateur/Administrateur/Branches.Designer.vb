@@ -71,7 +71,6 @@ Partial Class Branches
         Me.NameTextbox1.Name = "NameTextbox1"
         Me.NameTextbox1.Size = New System.Drawing.Size(180, 44)
         Me.NameTextbox1.TabIndex = 0
-        Me.NameTextbox1.Text = "Branche Name"
         Me.NameTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'GunaDataGridView1
@@ -91,7 +90,7 @@ Partial Class Branches
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.GunaDataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.GunaDataGridView1.ColumnHeadersHeight = 4
+        Me.GunaDataGridView1.ColumnHeadersHeight = 30
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
         DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 10.5!)
@@ -121,7 +120,7 @@ Partial Class Branches
         Me.GunaDataGridView1.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
         Me.GunaDataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
         Me.GunaDataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        Me.GunaDataGridView1.ThemeStyle.HeaderStyle.Height = 4
+        Me.GunaDataGridView1.ThemeStyle.HeaderStyle.Height = 30
         Me.GunaDataGridView1.ThemeStyle.ReadOnly = False
         Me.GunaDataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
         Me.GunaDataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal

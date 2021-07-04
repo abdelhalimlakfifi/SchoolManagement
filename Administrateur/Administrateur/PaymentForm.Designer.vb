@@ -23,8 +23,8 @@ Partial Class PaymentForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PaymentForm))
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.GunaLabel12 = New Guna.UI.WinForms.GunaLabel()
         Me.GunaPictureBox1 = New Guna.UI.WinForms.GunaPictureBox()
         Me.StudentsPaymentsDataGrid = New ns1.BunifuCustomDataGrid()
@@ -53,6 +53,9 @@ Partial Class PaymentForm
         Me.amountTextBox = New ns1.BunifuMetroTextbox()
         Me.BunifuTextbox1 = New ns1.BunifuTextbox()
         Me.GunaButton2 = New Guna.UI.WinForms.GunaButton()
+        Me.GunaComboBox3 = New Guna.UI.WinForms.GunaComboBox()
+        Me.GunaLabel11 = New Guna.UI.WinForms.GunaLabel()
+        Me.GunaButton5 = New Guna.UI.WinForms.GunaButton()
         CType(Me.GunaPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.StudentsPaymentsDataGrid, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GunaPictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -84,19 +87,19 @@ Partial Class PaymentForm
         '
         'StudentsPaymentsDataGrid
         '
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.StudentsPaymentsDataGrid.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.StudentsPaymentsDataGrid.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle3
         Me.StudentsPaymentsDataGrid.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.StudentsPaymentsDataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.StudentsPaymentsDataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(86, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.StudentsPaymentsDataGrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(86, Byte), Integer))
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.StudentsPaymentsDataGrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.StudentsPaymentsDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.StudentsPaymentsDataGrid.DoubleBuffered = True
         Me.StudentsPaymentsDataGrid.EnableHeadersVisualStyles = False
@@ -187,7 +190,7 @@ Partial Class PaymentForm
         Me.LastNameTextBox.LineIdleColor = System.Drawing.Color.Gray
         Me.LastNameTextBox.LineMouseHoverColor = System.Drawing.Color.Blue
         Me.LastNameTextBox.LineThickness = 3
-        Me.LastNameTextBox.Location = New System.Drawing.Point(118, 166)
+        Me.LastNameTextBox.Location = New System.Drawing.Point(118, 158)
         Me.LastNameTextBox.Margin = New System.Windows.Forms.Padding(4)
         Me.LastNameTextBox.Name = "LastNameTextBox"
         Me.LastNameTextBox.Size = New System.Drawing.Size(168, 32)
@@ -206,7 +209,7 @@ Partial Class PaymentForm
         Me.OtherPhoneTextBox.LineIdleColor = System.Drawing.Color.Gray
         Me.OtherPhoneTextBox.LineMouseHoverColor = System.Drawing.Color.Blue
         Me.OtherPhoneTextBox.LineThickness = 3
-        Me.OtherPhoneTextBox.Location = New System.Drawing.Point(118, 286)
+        Me.OtherPhoneTextBox.Location = New System.Drawing.Point(118, 278)
         Me.OtherPhoneTextBox.Margin = New System.Windows.Forms.Padding(4)
         Me.OtherPhoneTextBox.Name = "OtherPhoneTextBox"
         Me.OtherPhoneTextBox.Size = New System.Drawing.Size(168, 32)
@@ -225,7 +228,7 @@ Partial Class PaymentForm
         Me.PhoneTextBoxt.LineIdleColor = System.Drawing.Color.Gray
         Me.PhoneTextBoxt.LineMouseHoverColor = System.Drawing.Color.Blue
         Me.PhoneTextBoxt.LineThickness = 3
-        Me.PhoneTextBoxt.Location = New System.Drawing.Point(118, 246)
+        Me.PhoneTextBoxt.Location = New System.Drawing.Point(118, 238)
         Me.PhoneTextBoxt.Margin = New System.Windows.Forms.Padding(4)
         Me.PhoneTextBoxt.Name = "PhoneTextBoxt"
         Me.PhoneTextBoxt.Size = New System.Drawing.Size(168, 32)
@@ -244,7 +247,7 @@ Partial Class PaymentForm
         Me.AdressTextBox.LineIdleColor = System.Drawing.Color.Gray
         Me.AdressTextBox.LineMouseHoverColor = System.Drawing.Color.Blue
         Me.AdressTextBox.LineThickness = 3
-        Me.AdressTextBox.Location = New System.Drawing.Point(118, 206)
+        Me.AdressTextBox.Location = New System.Drawing.Point(118, 198)
         Me.AdressTextBox.Margin = New System.Windows.Forms.Padding(4)
         Me.AdressTextBox.Name = "AdressTextBox"
         Me.AdressTextBox.Size = New System.Drawing.Size(168, 32)
@@ -263,7 +266,7 @@ Partial Class PaymentForm
         Me.FirstNameTextBox.LineIdleColor = System.Drawing.Color.Gray
         Me.FirstNameTextBox.LineMouseHoverColor = System.Drawing.Color.Blue
         Me.FirstNameTextBox.LineThickness = 3
-        Me.FirstNameTextBox.Location = New System.Drawing.Point(118, 126)
+        Me.FirstNameTextBox.Location = New System.Drawing.Point(118, 118)
         Me.FirstNameTextBox.Margin = New System.Windows.Forms.Padding(4)
         Me.FirstNameTextBox.Name = "FirstNameTextBox"
         Me.FirstNameTextBox.Size = New System.Drawing.Size(168, 32)
@@ -274,7 +277,7 @@ Partial Class PaymentForm
         '
         Me.GunaLabel6.AutoSize = True
         Me.GunaLabel6.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.GunaLabel6.Location = New System.Drawing.Point(21, 303)
+        Me.GunaLabel6.Location = New System.Drawing.Point(21, 295)
         Me.GunaLabel6.Name = "GunaLabel6"
         Me.GunaLabel6.Size = New System.Drawing.Size(93, 15)
         Me.GunaLabel6.TabIndex = 35
@@ -284,7 +287,7 @@ Partial Class PaymentForm
         '
         Me.GunaLabel5.AutoSize = True
         Me.GunaLabel5.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.GunaLabel5.Location = New System.Drawing.Point(23, 263)
+        Me.GunaLabel5.Location = New System.Drawing.Point(23, 255)
         Me.GunaLabel5.Name = "GunaLabel5"
         Me.GunaLabel5.Size = New System.Drawing.Size(61, 15)
         Me.GunaLabel5.TabIndex = 34
@@ -294,7 +297,7 @@ Partial Class PaymentForm
         '
         Me.GunaLabel4.AutoSize = True
         Me.GunaLabel4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.GunaLabel4.Location = New System.Drawing.Point(26, 223)
+        Me.GunaLabel4.Location = New System.Drawing.Point(26, 215)
         Me.GunaLabel4.Name = "GunaLabel4"
         Me.GunaLabel4.Size = New System.Drawing.Size(48, 15)
         Me.GunaLabel4.TabIndex = 33
@@ -304,7 +307,7 @@ Partial Class PaymentForm
         '
         Me.GunaLabel7.AutoSize = True
         Me.GunaLabel7.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.GunaLabel7.Location = New System.Drawing.Point(26, 183)
+        Me.GunaLabel7.Location = New System.Drawing.Point(26, 175)
         Me.GunaLabel7.Name = "GunaLabel7"
         Me.GunaLabel7.Size = New System.Drawing.Size(49, 15)
         Me.GunaLabel7.TabIndex = 32
@@ -314,7 +317,7 @@ Partial Class PaymentForm
         '
         Me.GunaLabel8.AutoSize = True
         Me.GunaLabel8.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.GunaLabel8.Location = New System.Drawing.Point(28, 143)
+        Me.GunaLabel8.Location = New System.Drawing.Point(28, 135)
         Me.GunaLabel8.Name = "GunaLabel8"
         Me.GunaLabel8.Size = New System.Drawing.Size(34, 15)
         Me.GunaLabel8.TabIndex = 31
@@ -332,7 +335,7 @@ Partial Class PaymentForm
         Me.UsernameTextBox.LineIdleColor = System.Drawing.Color.Gray
         Me.UsernameTextBox.LineMouseHoverColor = System.Drawing.Color.Blue
         Me.UsernameTextBox.LineThickness = 3
-        Me.UsernameTextBox.Location = New System.Drawing.Point(118, 326)
+        Me.UsernameTextBox.Location = New System.Drawing.Point(118, 318)
         Me.UsernameTextBox.Margin = New System.Windows.Forms.Padding(4)
         Me.UsernameTextBox.Name = "UsernameTextBox"
         Me.UsernameTextBox.Size = New System.Drawing.Size(168, 32)
@@ -343,7 +346,7 @@ Partial Class PaymentForm
         '
         Me.GunaLabel9.AutoSize = True
         Me.GunaLabel9.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.GunaLabel9.Location = New System.Drawing.Point(27, 343)
+        Me.GunaLabel9.Location = New System.Drawing.Point(27, 335)
         Me.GunaLabel9.Name = "GunaLabel9"
         Me.GunaLabel9.Size = New System.Drawing.Size(49, 15)
         Me.GunaLabel9.TabIndex = 41
@@ -395,7 +398,7 @@ Partial Class PaymentForm
         Me.GunaButton4.ForeColor = System.Drawing.Color.White
         Me.GunaButton4.Image = CType(resources.GetObject("GunaButton4.Image"), System.Drawing.Image)
         Me.GunaButton4.ImageSize = New System.Drawing.Size(15, 15)
-        Me.GunaButton4.Location = New System.Drawing.Point(183, 401)
+        Me.GunaButton4.Location = New System.Drawing.Point(183, 440)
         Me.GunaButton4.Name = "GunaButton4"
         Me.GunaButton4.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(151, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GunaButton4.OnHoverBorderColor = System.Drawing.Color.Black
@@ -482,7 +485,7 @@ Partial Class PaymentForm
         Me.GunaButton2.ForeColor = System.Drawing.Color.White
         Me.GunaButton2.Image = CType(resources.GetObject("GunaButton2.Image"), System.Drawing.Image)
         Me.GunaButton2.ImageSize = New System.Drawing.Size(15, 15)
-        Me.GunaButton2.Location = New System.Drawing.Point(24, 401)
+        Me.GunaButton2.Location = New System.Drawing.Point(24, 440)
         Me.GunaButton2.Name = "GunaButton2"
         Me.GunaButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(151, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GunaButton2.OnHoverBorderColor = System.Drawing.Color.Black
@@ -493,11 +496,65 @@ Partial Class PaymentForm
         Me.GunaButton2.TabIndex = 48
         Me.GunaButton2.Text = "Modifier"
         '
+        'GunaComboBox3
+        '
+        Me.GunaComboBox3.BackColor = System.Drawing.Color.Transparent
+        Me.GunaComboBox3.BaseColor = System.Drawing.Color.White
+        Me.GunaComboBox3.BorderColor = System.Drawing.Color.Silver
+        Me.GunaComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.GunaComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.GunaComboBox3.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaComboBox3.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.GunaComboBox3.ForeColor = System.Drawing.Color.Black
+        Me.GunaComboBox3.FormattingEnabled = True
+        Me.GunaComboBox3.Location = New System.Drawing.Point(70, 365)
+        Me.GunaComboBox3.Name = "GunaComboBox3"
+        Me.GunaComboBox3.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.GunaComboBox3.OnHoverItemForeColor = System.Drawing.Color.White
+        Me.GunaComboBox3.Size = New System.Drawing.Size(216, 26)
+        Me.GunaComboBox3.TabIndex = 55
+        '
+        'GunaLabel11
+        '
+        Me.GunaLabel11.AutoSize = True
+        Me.GunaLabel11.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaLabel11.Location = New System.Drawing.Point(27, 371)
+        Me.GunaLabel11.Name = "GunaLabel11"
+        Me.GunaLabel11.Size = New System.Drawing.Size(30, 15)
+        Me.GunaLabel11.TabIndex = 54
+        Me.GunaLabel11.Text = "filier"
+        '
+        'GunaButton5
+        '
+        Me.GunaButton5.AnimationHoverSpeed = 0.07!
+        Me.GunaButton5.AnimationSpeed = 0.03!
+        Me.GunaButton5.BaseColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.GunaButton5.BorderColor = System.Drawing.Color.Black
+        Me.GunaButton5.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.GunaButton5.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaButton5.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaButton5.ForeColor = System.Drawing.Color.White
+        Me.GunaButton5.Image = CType(resources.GetObject("GunaButton5.Image"), System.Drawing.Image)
+        Me.GunaButton5.ImageSize = New System.Drawing.Size(15, 15)
+        Me.GunaButton5.Location = New System.Drawing.Point(292, 362)
+        Me.GunaButton5.Name = "GunaButton5"
+        Me.GunaButton5.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(151, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.GunaButton5.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.GunaButton5.OnHoverForeColor = System.Drawing.Color.White
+        Me.GunaButton5.OnHoverImage = Nothing
+        Me.GunaButton5.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaButton5.Size = New System.Drawing.Size(36, 32)
+        Me.GunaButton5.TabIndex = 56
+        Me.GunaButton5.Text = "BROWSE"
+        '
         'PaymentForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(996, 467)
+        Me.ClientSize = New System.Drawing.Size(996, 523)
+        Me.Controls.Add(Me.GunaButton5)
+        Me.Controls.Add(Me.GunaComboBox3)
+        Me.Controls.Add(Me.GunaLabel11)
         Me.Controls.Add(Me.BunifuTextbox1)
         Me.Controls.Add(Me.amountTextBox)
         Me.Controls.Add(Me.GunaLabel10)
@@ -564,4 +621,7 @@ Partial Class PaymentForm
     Friend WithEvents amountTextBox As ns1.BunifuMetroTextbox
     Friend WithEvents BunifuTextbox1 As ns1.BunifuTextbox
     Friend WithEvents GunaButton2 As Guna.UI.WinForms.GunaButton
+    Friend WithEvents GunaComboBox3 As Guna.UI.WinForms.GunaComboBox
+    Friend WithEvents GunaLabel11 As Guna.UI.WinForms.GunaLabel
+    Friend WithEvents GunaButton5 As Guna.UI.WinForms.GunaButton
 End Class

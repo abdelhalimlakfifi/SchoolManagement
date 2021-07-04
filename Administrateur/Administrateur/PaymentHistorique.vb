@@ -7,7 +7,7 @@ Public Class PaymentHistorique
         If con.State = ConnectionState.Closed Then
             con.Open()
         End If
-        cmd = New SqlCommand("SELECT * FROM FACTURE;", con)
+        cmd = New SqlCommand("SELECT F.ID_FACTURE, E.NOM + ' ' + E.PRENOM as 'Nom etudianT', A.NOM + ' ' +A.PRENOM  as 'Nom admin', F.MONTANT, F.MOISPAYE, F.[DATE] FROM FACTURE as F, ETUDIANT as E, ADMINISTRATEUR as A WHERE F.ID_ETUDIANT = E.ID_ETUDIANT AND A.ID_ADMIN = F.ID_ADMIN", con)
         Dim adapter As New SqlDataAdapter(cmd)
         Dim table As New DataTable
         adapter.Fill(table)
@@ -17,7 +17,7 @@ Public Class PaymentHistorique
         If con.State = ConnectionState.Closed Then
             con.Open()
         End If
-        cmd = New SqlCommand("SELECT * FROM ABSENCE;", con)
+        cmd = New SqlCommand("SELECT A.ID_ABSENCE, E.NOM + ' ' + E.PRENOM as 'Nom d etudiant', [DATE], P.NOM + ' ' + P.PRENOM as 'Nom de professeur' FROM ABSENCE as A , ETUDIANT as E, PROF as P WHERE E.ID_ETUDIANT=A.ID_ETUDIANT AND P.ID_PROF = A.ID_PROF ;", con)
         Dim adapter As New SqlDataAdapter(cmd)
         Dim table As New DataTable
         adapter.Fill(table)

@@ -2,6 +2,9 @@
 Public Class PopUp
     Dim con As New SqlConnection(pdo.ConString)
     Private Sub PopUp_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If con.State = ConnectionState.Closed Then
+            con.Open()
+        End If
         Dim cmd As New SqlCommand("SELECT * FROM FILIER", con)
         Dim adapter As New SqlDataAdapter(cmd)
         Dim table As New DataTable()
@@ -38,7 +41,7 @@ Public Class PopUp
         For i = 0 To GunaDataGridView1.Rows.Count - 1
             If CBool(GunaDataGridView1.Rows(i).Cells(0).Value) Then
 
-                cmd = New SqlCommand("INSERT INTO INTEGRATION (ID_FILIER, ID_MODULE) VALUES(" & GunaDataGridView1.Rows(i).Cells(1).Value & "," & GunaDataGridView1.Rows(i).Cells(1).Value & ");", con)
+                cmd = New SqlCommand("INSERT INTO INTEGRATION (ID_FILIER, ID_MODULE) VALUES(" & GunaDataGridView1.Rows(i).Cells(1).Value & "," & moduleId & ");", con)
                 Try
                     cmd.ExecuteScalar()
                 Catch ex As Exception
@@ -48,6 +51,7 @@ Public Class PopUp
         Next
         Modules.fill()
         MsgBox("Course saved")
+        Me.Close()
     End Sub
 
     Private Sub GunaButton1_Click(sender As Object, e As EventArgs) Handles GunaButton1.Click

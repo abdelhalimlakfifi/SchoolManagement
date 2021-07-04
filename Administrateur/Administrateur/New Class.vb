@@ -2,6 +2,9 @@
 Public Class New_Class
     Dim con As New SqlConnection(pdo.ConString)
     Private Sub New_Class_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If con.State = ConnectionState.Closed Then
+            con.Open()
+        End If
         Dim cmd As New SqlCommand("SELECT * FROM FILIER", con)
         Dim adapter As New SqlDataAdapter(cmd)
         Dim table As New DataTable()
